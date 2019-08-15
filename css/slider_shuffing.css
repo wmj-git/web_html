@@ -2,7 +2,7 @@
 /* Slider Controls */
 
 .cs-circleslight .br-controls {
-  background-image:url('../../img/bannerImg/trans.png');
+  background-image:url('../img/bannerImg/trans.png');
 }
 
 .cs-circleslight .br-next,
@@ -14,7 +14,7 @@
 .cs-circleslight .br-video .close-btn,
 .cs-circleslight .br-large-loading,
 .cs-circleslight .br-loading {
-  background-image:url('../../img/bannerImg/controls.png');
+  background-image:url('../img/bannerImg/controls.png');
 }
 
 .cs-circleslight .br-previous,
@@ -87,7 +87,7 @@
 }
 
 .cs-circleslight .br-thumb-frame {
-  background-image:url('../../img/bannerImg/thumb-frame.png');
+  background-image:url('../img/bannerImg/thumb-frame.png');
 }
 
 .cs-circleslight .br-thumb-bottom .br-thumb-frame {
@@ -275,7 +275,7 @@
 .cs-circleslight .br-bar-timer .br-timer-glow {
   width:104px;
   height:7px;
-  background-image:url('../../img/bannerImg/light-timer-glow.png');
+  background-image:url('../img/bannerImg/light-timer-glow.png');
   filter:none !important;
 }
 
@@ -350,5 +350,5 @@
 
 .cs-circleslight .br-loading .img,
 .cs-circleslight .br-large-loading .img {
-  background:url("../../img/bannerImg/loading.gif") no-repeat center center;
+  background:url("../img/bannerImg/loading.gif") no-repeat center center;
 }

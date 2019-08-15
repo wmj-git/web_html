@@ -54,6 +54,7 @@ a:hover {
 
 /* Slider Controls */
 .br-controls {
+  display: none;
   position: absolute;
   z-index: 10;
 }
@@ -184,7 +185,6 @@ a:hover {
   height: 100%;
 }
 
-/* Trying to remove all the default global styles of WordPress :) */
 .cute-slider img {
   max-width: none !important;
 }
@@ -223,6 +223,4 @@ a:hover {
   margin: 10px 0px 0px 0px !important;
   padding: 0px !important;
 }
-
-/**************** cuteslider end ****************/
 
