@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bda9abe-be6b-4acd-a498-f41c343b4ef3" name="Default Changelist" comment="" />
+    <list default="true" id="1bda9abe-be6b-4acd-a498-f41c343b4ef3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="641" column="6" lean-forward="true" selection-start-line="641" selection-start-column="6" selection-end-line="641" selection-end-column="6" />
+            <state relative-caret-position="93">
+              <caret line="643" column="18" lean-forward="true" selection-start-line="643" selection-start-column="18" selection-end-line="643" selection-end-column="18" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -57,6 +61,27 @@
                 <element signature="n#div#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="117">
+                <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -137,6 +162,7 @@
         <option value="$PROJECT_DIR$/css/scss/_about.scss" />
         <option value="$PROJECT_DIR$/css/scss/_contact.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -146,7 +172,9 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -158,34 +186,6 @@
             <path>
               <item name="amkj" type="b2602c69:ProjectViewProjectNode" />
               <item name="amkj" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amkj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amkj" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amkj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amkj" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amkj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amkj" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="index.scss" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="amkj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amkj" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amkj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amkj" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="em_contact" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -206,11 +206,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Apache\apache-tomcat-7.0.88\webapps\amkj" />
       <recent name="E:\Apache\apache-tomcat-7.0.88\webapps\amkj\img\em_contact" />
       <recent name="E:\Apache\apache-tomcat-7.0.88\webapps\amkj\img\em_contect" />
       <recent name="E:\Apache\apache-tomcat-7.0.88\webapps\amkj\img\em_partners" />
       <recent name="E:\Apache\apache-tomcat-7.0.88\webapps\amkj\img\em_about" />
-      <recent name="E:\Apache\apache-tomcat-7.0.88\webapps\amkj\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -263,17 +263,18 @@
       <workItem from="1565656437449" duration="29581000" />
       <workItem from="1565763346688" duration="335000" />
       <workItem from="1565764351678" duration="12692000" />
-      <workItem from="1565830009706" duration="19414000" />
+      <workItem from="1565830009706" duration="19855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72786000" />
+    <option name="totallyTimeSpent" value="73227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16103059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16103059" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -284,7 +285,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33035713" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33035713" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -499,8 +500,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="641" column="6" lean-forward="true" selection-start-line="641" selection-start-column="6" selection-end-line="641" selection-end-column="6" />
+        <state relative-caret-position="93">
+          <caret line="643" column="18" lean-forward="true" selection-start-line="643" selection-start-column="18" selection-end-line="643" selection-end-column="18" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -537,6 +538,23 @@
             <element signature="n#div#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="117">
+            <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
