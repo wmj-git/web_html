@@ -1,0 +1,108 @@
+.em_partners {
+  & .em_partnerTitle1 {
+    display: none;
+  }
+
+  & .em_partners_show {
+    position: relative;
+    margin-top: 28px;
+    width: 100%;
+    height: 3px;
+    background: $em-partners-highlight-color;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+
+    &.active {
+      width: 100%;
+    }
+  }
+
+  & .em_partners_main {
+    background: url(../img/em_partners/service_main_bj.png) repeat left top;
+    & .em_partners_listAll{
+      padding : 20px 0;
+      & .em_partners_list {
+        float: left;
+        overflow: hidden;
+        margin: 0 18px 22px;
+        width: 170px;
+        height: 100px;
+
+        & span {
+          position: absolute;
+          background: $em-partners-highlight-color;
+          -webkit-transition: all .3s cubic-bezier(.25, .46, .45, .94);
+          -moz-transition: all .3s cubic-bezier(.25, .46, .45, .94);
+          -o-transition: all .3s cubic-bezier(.25, .46, .45, .94);
+          transition: all .3s cubic-bezier(.25, .46, .45, .94);
+
+          &.em_span1 {
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+          }
+
+          &.em_span2 {
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 0;
+          }
+
+          &.em_span3 {
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+          }
+
+          &.em_span4 {
+            left: 0;
+            bottom: 0;
+            width: 2px;
+            height: 0;
+          }
+        }
+
+        &:hover {
+          .em_span1, .em_span3 {
+            width: 100%;
+          }
+
+          .em_span2, .em_span4 {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .em_partners {
+    & .em_partnerTitle1 {
+      display: block;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    & .em_partnerTitle {
+      display: none;
+    }
+
+    & .em_partners_main {
+      & .em_partners_listAll{
+        padding: 20px 0;
+        & .em_partners_list {
+          width: 130px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

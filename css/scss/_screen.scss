@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.fullpage{
+  top: 60px;
+}
+
+.section.fp-section.fp-table{
+  &.pageOne {
+    height: 600px;
+   /* width: 100%;
+    margin: 0;
+    color: #555;
+    min-width: 320px;
+    -webkit-text-size-adjust: 100%;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    line-height: 20px;*/
+   /* background: url('../img/bannerImg/banner_bg.jpg') no-repeat center;*/
+    /*background-color: white;*/
+    background-size: cover;
+    .fp-tableCell{
+      vertical-align: top;
+    }
+  }
+
+  &.pageTwo {
+    background: url('../img/bg2.jpg') no-repeat center;
+    color: #fff;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+
+  &.pageThree {
+    background: url(../img/em_pro/bg3.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+
+  &.pageFour {
+    background: url(../img/bg4.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+  &.pageFive{
+    background: url(../img/em_partners/bg5.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+  &.pageSix{
+    background: url(../img/em_contact/bg6.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  }
+}

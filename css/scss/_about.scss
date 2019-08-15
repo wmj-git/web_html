@@ -1,0 +1,80 @@
+.em_about {
+  & .em_aboutList {
+    & li {
+      list-style: none;
+      float: left;
+      margin-left: 2px;
+      width: 80px;
+      height: 42px;
+      background: $em-aboutList-btn-color;
+      color: $em-textColor-base;
+      text-align: center;
+      font-size: 16px;
+      line-height: 42px;
+      cursor: pointer;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+
+      &:hover {
+        background-color: $em-abooutList-btn-color-highlight;
+      }
+
+      & a {
+        color: $em-textColor-base;
+      }
+    }
+  }
+
+  & .em_about_div {
+    position: relative;
+    top: 45px;
+
+    & .em_about_right {
+      & .em_about_top {
+        a {
+          float: left;
+          margin-right: 38px;
+          width: 90px;
+          height: 118px;
+        }
+      }
+
+      & .em_about_des {
+        color: $em-textColor-base;
+        margin-top: 140px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .em_about {
+    & .em_aboutTitle {
+      padding-left: 10px;
+    }
+
+    & .em_aboutList {
+      margin-left: 20px;
+
+      & li {
+        width: 60px;
+      }
+    }
+    & .em_about_div{
+      & .em_about_right {
+        & .em_about_top {
+          a {
+            width: 56px;
+          }
+        }
+        & .em_about_des{
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
