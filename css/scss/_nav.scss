@@ -1,4 +1,7 @@
 .em_nav {
+  .bg-dark{
+    height: 58px;
+  }
   .navbar-nav {
     & a.nav-item.nav-link {
       &.active {
@@ -28,7 +31,7 @@
         text-align: center;
 
         & .nav-item {
-          background-color: rgba(0, 0, 0, 0.7);
+          background-color: rgba(0, 0, 0, 0.8);
         }
       }
     }
