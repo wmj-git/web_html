@@ -1,0 +1,18 @@
+.em_footer_side {
+  padding: 20px 0;
+  color: $em-textColor-base;
+
+  & .em_footer_main {
+    line-height: 26px;
+    & .em_footer_left {
+    }
+
+    & .em_footer_right {
+      img {
+        line-height: 40px;
+      }
+    }
+  }
+
+
+}

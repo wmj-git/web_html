@@ -224,6 +224,8 @@ a {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover; }
+.section.fp-section.fp-table.pageFooter {
+  background-color: black; }
 
 .em_pro h2.em_h2 {
   display: none; }
@@ -478,5 +480,12 @@ a {
     display: block; }
   .em_contact .em_contact_img {
     display: none; } }
+.em_footer_side {
+  padding: 20px 0;
+  color: #fff; }
+  .em_footer_side .em_footer_main {
+    line-height: 26px; }
+    .em_footer_side .em_footer_main .em_footer_right img {
+      line-height: 40px; }
 
 /*# sourceMappingURL=index.css.map */
