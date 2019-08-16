@@ -1,7 +1,8 @@
 .em_contact {
-  & .em_contact_img1{
+  & .em_contact_img1 {
     display: none;
   }
+
   & ul.em_contact_main {
     color: $em-textColor-base;
     padding-left: 0;
@@ -26,6 +27,10 @@
 
       }
 
+      & .contact_business {
+        background: url(../img/em_contact/cont_b.png) no-repeat;
+      }
+
       & .contact_type {
         background: url(../img/em_contact/cont_c.png) no-repeat;
       }
@@ -33,11 +38,13 @@
       & .contact_address {
         background: url(../img/em_contact/cont_d.png) no-repeat;
       }
-      &:hover{
-       .contact_type,.contact_address{
-          background-position:0 -44px ;
+
+      &:hover {
+        .contact_type, .contact_address,.contact_business {
+          background-position: 0 -44px;
         }
       }
+
       & a {
         color: $em-textColor-base;
       }
@@ -52,9 +59,11 @@
         height: 80%;
       }
     }
-    & .em_contact_top{
+
+    & .em_contact_top {
       padding-top: 20px;
     }
+
     & ul.em_contact_main {
       & li {
         font-size: 14px;
@@ -62,12 +71,14 @@
     }
   }
 }
-@media (max-width: 1500px){
-  .em_contact{
-    & .em_contact_img1{
+
+@media (max-width: 1500px) {
+  .em_contact {
+    & .em_contact_img1 {
       display: block;
     }
-    & .em_contact_img{
+
+    & .em_contact_img {
       display: none;
     }
   }

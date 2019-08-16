@@ -1,5 +1,7 @@
 .em_footer_side {
-  padding: 20px 0;
+  background-color: #f8d7da;
+  height: 60px;
+  padding: 5px 0;
   color: $em-textColor-base;
 
   & .em_footer_main {
@@ -9,7 +11,6 @@
 
     & .em_footer_right {
       img {
-        line-height: 40px;
       }
     }
   }

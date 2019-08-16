@@ -1,0 +1,18 @@
+.em_nav .navbar-nav a.nav-item.nav-link.active {
+  color: #90c42f; }
+.em_nav .navbar-collapse {
+  padding-left: 400px; }
+
+@media (max-width: 786px) {
+  .em_nav .navbar-brand {
+    padding-left: 20px; }
+  .em_nav .navbar-collapse {
+    padding-left: 0; }
+    .em_nav .navbar-collapse .navbar-nav {
+      float: right;
+      width: 100px;
+      text-align: center; }
+      .em_nav .navbar-collapse .navbar-nav .nav-item {
+        background-color: rgba(0, 0, 0, 0.7); } }
+
+/*# sourceMappingURL=common.css.map */

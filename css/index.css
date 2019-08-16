@@ -2,28 +2,21 @@
 /*@import "../css/scss/shuffling";
 @import "../css/scss/slider_shuffing";*/
 .em_nav .navbar-nav a.nav-item.nav-link.active {
-  background-color: #90c42f; }
-.em_nav .navbar-brand {
-  padding: 0 0 0 50px;
-  line-height: 50px; }
+  color: #90c42f; }
 .em_nav .navbar-collapse {
   padding-left: 400px; }
-.em_nav .navbar {
-  margin-bottom: 0;
-  height: 60px; }
-.em_nav .navbar-default {
-  background-color: white; }
-.em_nav .navbar-toggle {
-  border-color: #cccccc; }
-  .em_nav .navbar-toggle:hover, .em_nav .navbar-toggle:focus {
-    background-color: black;
-    color: #fff; }
 
 @media (max-width: 786px) {
   .em_nav .navbar-brand {
     padding-left: 20px; }
   .em_nav .navbar-collapse {
-    padding-left: 0; } }
+    padding-left: 0; }
+    .em_nav .navbar-collapse .navbar-nav {
+      float: right;
+      width: 100px;
+      text-align: center; }
+      .em_nav .navbar-collapse .navbar-nav .nav-item {
+        background-color: rgba(0, 0, 0, 0.7); } }
 a {
   text-decoration: none; }
 
@@ -216,7 +209,7 @@ a {
   -webkit-background-size: cover;
   -moz-background-size: cover; }
 .section.fp-section.fp-table.pageFooter {
-  background-color: black; }
+  background-color: #d0d2d6; }
 
 .em_pro h2.em_h2 {
   display: none; }
@@ -450,11 +443,13 @@ a {
       cursor: pointer;
       -webkit-transition: all .2s;
       transition: all .2s; }
+    .em_contact ul.em_contact_main li .contact_business {
+      background: url(../img/em_contact/cont_b.png) no-repeat; }
     .em_contact ul.em_contact_main li .contact_type {
       background: url(../img/em_contact/cont_c.png) no-repeat; }
     .em_contact ul.em_contact_main li .contact_address {
       background: url(../img/em_contact/cont_d.png) no-repeat; }
-    .em_contact ul.em_contact_main li:hover .contact_type, .em_contact ul.em_contact_main li:hover .contact_address {
+    .em_contact ul.em_contact_main li:hover .contact_type, .em_contact ul.em_contact_main li:hover .contact_address, .em_contact ul.em_contact_main li:hover .contact_business {
       background-position: 0 -44px; }
     .em_contact ul.em_contact_main li a {
       color: #fff; }
@@ -472,11 +467,11 @@ a {
   .em_contact .em_contact_img {
     display: none; } }
 .em_footer_side {
-  padding: 20px 0;
+  background-color: #f8d7da;
+  height: 60px;
+  padding: 5px 0;
   color: #fff; }
   .em_footer_side .em_footer_main {
     line-height: 26px; }
-    .em_footer_side .em_footer_main .em_footer_right img {
-      line-height: 40px; }
 
 /*# sourceMappingURL=index.css.map */
