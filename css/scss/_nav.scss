@@ -1,6 +1,5 @@
 .em_nav {
   .navbar-nav {
-    float: right;
     & a.nav-item.nav-link{
       &.active{
         background-color: $em-backgroundColor-highlight;

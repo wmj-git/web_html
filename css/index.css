@@ -1,10 +1,8 @@
 @charset "UTF-8";
 /*@import "../css/scss/shuffling";
 @import "../css/scss/slider_shuffing";*/
-.em_nav .navbar-nav {
-  float: right; }
-  .em_nav .navbar-nav a.nav-item.nav-link.active {
-    background-color: #90c42f; }
+.em_nav .navbar-nav a.nav-item.nav-link.active {
+  background-color: #90c42f; }
 .em_nav .navbar-brand {
   padding: 0 0 0 50px;
   line-height: 50px; }
