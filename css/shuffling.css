@@ -54,7 +54,7 @@ a:hover {
 
 /* Slider Controls */
 .br-controls {
-  display: none;
+  /*display: none;*/
   position: absolute;
   z-index: 10;
 }

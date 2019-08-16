@@ -15,18 +15,6 @@
   .navbar-collapse{
     padding-left: 400px;
   }
-  .navbar-brand{
-    float: left;
-    width: 230px;
-    height: auto;
-    margin-top: -10px;
-    overflow: hidden;
-    img{
-      vertical-align: bottom;
-      max-width: 100%;
-    }
-
-  }
   .navbar {
     margin-bottom: 0;
     height: 60px;
@@ -49,6 +37,9 @@
   .em_nav{
     & .navbar-brand {
       padding-left: 20px;
+    }
+    .navbar-collapse{
+      padding-left: 0;
     }
   }
 

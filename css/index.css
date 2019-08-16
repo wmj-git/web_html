@@ -10,15 +10,6 @@
   line-height: 50px; }
 .em_nav .navbar-collapse {
   padding-left: 400px; }
-.em_nav .navbar-brand {
-  float: left;
-  width: 230px;
-  height: auto;
-  margin-top: -10px;
-  overflow: hidden; }
-  .em_nav .navbar-brand img {
-    vertical-align: bottom;
-    max-width: 100%; }
 .em_nav .navbar {
   margin-bottom: 0;
   height: 60px; }
@@ -32,7 +23,9 @@
 
 @media (max-width: 786px) {
   .em_nav .navbar-brand {
-    padding-left: 20px; } }
+    padding-left: 20px; }
+  .em_nav .navbar-collapse {
+    padding-left: 0; } }
 a {
   text-decoration: none; }
 
