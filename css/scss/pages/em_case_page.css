@@ -1,0 +1,26 @@
+.em_case_page {
+  overflow: hidden; }
+  .em_case_page .nav-tabs li {
+    display: inline; }
+    .em_case_page .nav-tabs li a {
+      font-size: 16px;
+      line-height: 62px;
+      color: #333;
+      display: inline-block;
+      padding: 0 6px;
+      margin: 0 15px;
+      text-decoration: none;
+      text-align: center; }
+  .em_case_page .tab-content {
+    margin-top: 20px;
+    color: #000;
+    margin-bottom: 20px; }
+    .em_case_page .tab-content .case_list {
+      padding: 0 20px 20px 0; }
+      .em_case_page .tab-content .case_list img {
+        width: 250px;
+        height: 160px; }
+      .em_case_page .tab-content .case_list dt {
+        border: 1px solid #f00; }
+
+/*# sourceMappingURL=em_case_page.css.map */
