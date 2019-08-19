@@ -172,16 +172,10 @@ a {
             height: 44px;
             line-height: 44px;
             font-size: 18px;
-
+            white-space: nowrap;
+            text-overflow: ellipsis;
             -o-text-overflow: ellipsis;
             overflow: hidden;
-
-            & span {
-              white-space: nowrap;
-              text-overflow: ellipsis;
-              width: 595px;
-
-            }
 
             & a {
               color: $em-backgroundColor-highlight;
