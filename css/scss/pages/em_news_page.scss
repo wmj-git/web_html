@@ -13,6 +13,8 @@ a {
 }
 
 .em_news_page {
+  overflow: hidden;
+
   & .em_news_container {
     margin: 0 auto;
     padding-top: 15px;
@@ -21,7 +23,6 @@ a {
       & .news_title_top {
         padding: 15px 0 0 15px;
         margin-top: 0;
-        width: 230px;
         height: 55px;
         line-height: 35px;
         background: $em-backgroundColor-highlight;
@@ -41,13 +42,11 @@ a {
       }
 
       & .news_list {
-        width: 230px;
         height: auto;
         background: #FFF8FB;
         margin-bottom: 20px;
 
         & ul li {
-          width: 230px;
           height: 40px;
           margin-left: -40px;
           border: 1px solid #EEE;
@@ -68,7 +67,6 @@ a {
     & .news_contact {
       & .contact_left_title {
         padding-left: 15px;
-        width: 230px;
         height: 40px;
         line-height: 40px;
         background: $em-backgroundColor-highlight;
@@ -89,7 +87,6 @@ a {
       }
 
       & .contact_left_container {
-        width: 230px;
         height: auto;
         padding-top: 75px;
         padding-bottom: 20px;
@@ -205,6 +202,10 @@ a {
             padding-top: 6px;
             width: 595px;
 
+            & span {
+              color: #f00;
+            }
+
             & a {
               color: darken($em-textColor-base, 100%);
             }
@@ -221,16 +222,19 @@ a {
       & .news_right_list {
         & li.news_item {
           height: auto;
-          & .item_left{
-            img{
+
+          & .item_left {
+            img {
               margin-left: 12px;
             }
           }
-          & .item_right{
-            & .item_title{
+
+          & .item_right {
+            & .item_title {
               font-size: 15px;
               margin-left: -15px;
-              & span{
+
+              & span {
                 width: 350px;
               }
             }

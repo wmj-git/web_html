@@ -16,5 +16,17 @@
       text-align: center; }
       .em_nav .navbar-collapse .navbar-nav .nav-item {
         background-color: rgba(0, 0, 0, 0.8); } }
+.em_footer_side {
+  background: #000;
+  color: #fff; }
+  .em_footer_side .em_footer_left {
+    text-align: right; }
+    .em_footer_side .em_footer_left span {
+      padding-right: 12px;
+      line-height: 40px; }
+
+@media (max-width: 768px) {
+  .em_footer_side .em_footer_left {
+    text-align: left; } }
 
 /*# sourceMappingURL=common.css.map */
