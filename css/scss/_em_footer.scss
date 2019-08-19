@@ -1,7 +1,10 @@
+li{
+  list-style: none;
+}
 .em_footer_side {
   background: #000;
   color: $em-borderColor-base;
-
+  overflow: hidden;
   & .em_footer_left {
     text-align: center;
     padding-top: 10px;
