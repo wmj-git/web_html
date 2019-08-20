@@ -1,7 +1,7 @@
 .em_about {
   & .em_aboutList {
     padding-top: 30px;
-
+    padding-left: 143px;
     & .nav-tabs {
       border: unset;
     }
@@ -44,7 +44,7 @@
       & .em_about_top {
         a {
           float: left;
-          margin-right: 38px;
+          margin-right: 58px;
           width: 90px;
           height: 118px;
         }
@@ -199,6 +199,7 @@
         & .em_about_top {
           a {
             width: 56px;
+            margin-right: 38px;
           }
         }
 

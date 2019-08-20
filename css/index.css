@@ -296,7 +296,8 @@ a {
   .em_pro .em_scrollcontainer {
     left: 50px; } }
 .em_about .em_aboutList {
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-left: 143px; }
   .em_about .em_aboutList .nav-tabs {
     border: unset; }
   .em_about .em_aboutList li {
@@ -325,7 +326,7 @@ a {
   top: 45px; }
   .em_about .em_about_div .em_about_right .em_about_top a {
     float: left;
-    margin-right: 38px;
+    margin-right: 58px;
     width: 90px;
     height: 118px; }
   .em_about .em_about_div .em_about_right .em_about_des {
@@ -424,7 +425,8 @@ a {
       .em_about .em_aboutList li a {
         padding: 0; }
   .em_about .em_about_div .em_about_right .em_about_top a {
-    width: 56px; }
+    width: 56px;
+    margin-right: 38px; }
   .em_about .em_about_div .em_about_right .em_about_des {
     margin-bottom: 50px; }
   .em_about .em_news_list h4 {
