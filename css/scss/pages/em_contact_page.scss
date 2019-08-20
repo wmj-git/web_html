@@ -1,0 +1,44 @@
+.em_contact_page {
+  min-height: 460px;
+  background: url("../../../img/em_contact_page/contact_banner_03.jpg") no-repeat;
+  background-size: cover;
+
+  & .contact_map {
+    text-align: center;
+    padding: 200px 0 100px 0;
+    margin: 0 auto;
+  }
+
+  & .contact_main {
+    padding: 80px 0 180px 0;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+
+    & .contact_details {
+      & .contact_details_list {
+        padding: 16px;
+        text-align: left;
+
+        & img {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:768px){
+  .em_contact_page{
+    & .contact_map{
+      padding: 80px 0 20px 0;
+    }
+    & .contact_main {
+      padding: 20px 20px 20px 30px;
+      & .contact_details {
+        & .contact_details_list {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,8 @@ li {
 
 a {
   text-decoration: none; }
+  a:hover {
+    cursor: pointer; }
 
 .em_news_page {
   overflow: hidden; }
@@ -33,13 +35,12 @@ a {
         margin-left: -40px;
         border: 1px solid #EEE;
         border-top: 0; }
-        .em_news_page .em_news_container .news_left_title .news_list ul li a {
+        .em_news_page .em_news_container .news_left_title .news_list ul li a, .em_news_page .em_news_container .news_left_title .news_list ul li span {
           padding-left: 30px;
           display: block;
           line-height: 40px;
           font-size: 16px;
-          color: #666666;
-          text-decoration: none; }
+          color: #666666; }
     .em_news_page .em_news_container .news_contact .contact_left_title {
       padding-left: 15px;
       height: 40px;

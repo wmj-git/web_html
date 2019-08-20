@@ -7,6 +7,9 @@ li {
 a {
   text-decoration: none;
 
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .em_news_page {
@@ -49,13 +52,12 @@ a {
           border: 1px solid #EEE;
           border-top: 0;
 
-          & a {
+          & a, & span{
             padding-left: 30px;
             display: block;
             line-height: 40px;
             font-size: 16px;
             color: darken($em-textColor-base, 60%);
-            text-decoration: none;
           }
         }
       }
