@@ -295,29 +295,31 @@ a {
     left: -12px; }
   .em_pro .em_scrollcontainer {
     left: 50px; } }
-.em_about .em_aboutList .nav-tabs {
-  border: unset; }
-.em_about .em_aboutList li {
-  list-style: none;
-  float: left;
-  margin-left: 2px;
-  background: #263551;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  line-height: 38px;
-  cursor: pointer;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s; }
-  .em_about .em_aboutList li a {
-    padding: 2px 20px;
-    display: block; }
-  .em_about .em_aboutList li:hover, .em_about .em_aboutList li.active, .em_about .em_aboutList li:active {
-    background-color: #334871; }
-  .em_about .em_aboutList li a {
-    color: #fff; }
+.em_about .em_aboutList {
+  padding-top: 30px; }
+  .em_about .em_aboutList .nav-tabs {
+    border: unset; }
+  .em_about .em_aboutList li {
+    list-style: none;
+    float: left;
+    margin-left: 2px;
+    background: #263551;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 38px;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .em_about .em_aboutList li a {
+      padding: 2px 20px;
+      display: block; }
+    .em_about .em_aboutList li:hover, .em_about .em_aboutList li.active, .em_about .em_aboutList li:active {
+      background-color: #334871; }
+    .em_about .em_aboutList li a {
+      color: #fff; }
 .em_about .em_about_div {
   position: relative;
   top: 45px; }
@@ -373,31 +375,44 @@ a {
   position: relative;
   top: 45px;
   background: url(../img/em_about/time_x1.png) no-repeat center 9px; }
-  .em_about .em_history .em_history_list h4 {
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 54px;
-    padding-top: 15px; }
-  .em_about .em_history .em_history_list .history_icon {
-    margin: 5px auto 0 auto;
-    height: 11px;
-    background: url(../img/em_about/history_ico.png) no-repeat center bottom; }
-  .em_about .em_history .em_history_list dl {
-    margin: 0 auto;
-    padding: 15px 15px 0;
-    width: 268px;
-    height: 114px;
-    border: 1px solid #fff;
-    border-top: none; }
-  .em_about .em_history .em_history_list dd {
-    float: right;
-    width: 155px;
-    color: #fff;
-    font-size: 14px;
-    line-height: 24px; }
+  .em_about .em_history .history_btn_right {
+    margin-top: 150px;
+    height: 35px;
+    background: url(../img/em_about/right_btn.png) no-repeat center; }
+  .em_about .em_history .history_btn_left {
+    margin-top: 150px;
+    height: 35px;
+    background: url(../img/em_about/left_btn.png) no-repeat center; }
+  .em_about .em_history .history_main {
+    height: 300px;
+    overflow: hidden; }
+  .em_about .em_history .em_history_list {
+    float: left; }
+    .em_about .em_history .em_history_list h4 {
+      margin: 0 auto;
+      color: #fff;
+      text-align: center;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 54px;
+      padding-top: 15px; }
+    .em_about .em_history .em_history_list .history_icon {
+      margin: 5px auto 0 auto;
+      height: 11px;
+      background: url(../img/em_about/history_ico.png) no-repeat center bottom; }
+    .em_about .em_history .em_history_list dl {
+      margin: 0 auto;
+      padding: 15px 15px 0;
+      width: 268px;
+      height: 114px;
+      border: 1px solid #fff;
+      border-top: none; }
+    .em_about .em_history .em_history_list dd {
+      float: right;
+      width: 155px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 24px; }
 
 @media (max-width: 768px) {
   .em_about .em_aboutTitle {
@@ -406,10 +421,21 @@ a {
     margin-left: 20px; }
     .em_about .em_aboutList li {
       width: 60px; }
+      .em_about .em_aboutList li a {
+        padding: 0; }
   .em_about .em_about_div .em_about_right .em_about_top a {
     width: 56px; }
   .em_about .em_about_div .em_about_right .em_about_des {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .em_about .em_news_list h4 {
+    font-size: 15px; }
+  .em_about .em_news_list .news_more {
+    margin-top: 0;
+    margin-bottom: 30px; }
+  .em_about .em_history .history_btn_left {
+    margin-top: 50px; }
+  .em_about .em_history .history_btn_right {
+    display: none; } }
 .em_partners .em_partnerTitle1 {
   display: none; }
 .em_partners .em_partners_show {
