@@ -1,0 +1,80 @@
+.em_about_page {
+  overflow: hidden; }
+  .em_about_page .about_introduce .about_title {
+    height: 100px; }
+    .em_about_page .about_introduce .about_title h4 {
+      text-align: center;
+      line-height: 100px;
+      font-size: 28px;
+      color: #4d4d4d; }
+  .em_about_page .about_introduce .about_dec {
+    margin: 0 auto; }
+    .em_about_page .about_introduce .about_dec p {
+      padding: 0 20px;
+      line-height: 30px;
+      text-align: justify;
+      /*Text alignment*/
+      text-justify: inter-ideograph;
+      /*IE*/ }
+      .em_about_page .about_introduce .about_dec p.special {
+        text-indent: 34px; }
+  .em_about_page .about_introduce .about_other {
+    margin: 0 auto;
+    text-align: center; }
+  .em_about_page .about_advantages {
+    background-color: #f2f2f2;
+    padding-bottom: 40px; }
+    .em_about_page .about_advantages .about_title {
+      height: 150px;
+      text-align: center; }
+      .em_about_page .about_advantages .about_title h4 {
+        text-align: center;
+        padding-top: 60px;
+        font-size: 28px;
+        color: #4d4d4d; }
+      .em_about_page .about_advantages .about_title span {
+        color: gray; }
+    .em_about_page .about_advantages .about_service {
+      margin: 0 auto; }
+      .em_about_page .about_advantages .about_service dd {
+        color: #4d4d4d;
+        font-weight: 400; }
+  .em_about_page .about_team {
+    padding-bottom: 40px; }
+    .em_about_page .about_team .about_title {
+      height: 100px;
+      text-align: center; }
+      .em_about_page .about_team .about_title h4 {
+        text-align: center;
+        padding-top: 60px;
+        font-size: 28px;
+        color: #4d4d4d; }
+      .em_about_page .about_team .about_title span {
+        color: gray; }
+    .em_about_page .about_team .team_dec {
+      margin: 0 auto;
+      padding: 20px; }
+    .em_about_page .about_team .team_img {
+      margin: 0 auto;
+      text-align: center; }
+      .em_about_page .about_team .team_img img {
+        width: 260px;
+        margin: 0 10px 10px 0; }
+
+@media (max-width: 768px) {
+  .em_about_page .about_introduce .about_title h4 {
+    font-size: 20px; }
+  .em_about_page .about_introduce .about_dec p {
+    padding: 0 20px; }
+  .em_about_page .about_advantages .about_title h4 {
+    font-size: 20px; }
+  .em_about_page .about_advantages .about_service dd {
+    text-align: justify;
+    padding: 6px;
+    font-size: 14px; }
+  .em_about_page .about_team .about_title h4 {
+    font-size: 20px; }
+  .em_about_page .about_team .team_dec p {
+    text-align: justify; } }
+
+/*# sourceMappingURL=em_about_page.css.map */

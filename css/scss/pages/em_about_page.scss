@@ -1,0 +1,151 @@
+@import "../../scss/variable";
+
+.em_about_page {
+  overflow: hidden;
+
+  & .about_introduce {
+    & .about_title {
+      height: 100px;
+
+      & h4 {
+        text-align: center;
+        line-height: 100px;
+        font-size: 28px;
+        color: darken($em-textColor-base, 70%);
+      }
+    }
+
+    & .about_dec {
+      margin: 0 auto;
+
+      p {
+        padding: 0 20px;
+        line-height: 30px;
+        text-align: justify; /*Text alignment*/
+        text-justify: inter-ideograph; /*IE*/
+        &.special {
+          text-indent: 34px;
+        }
+      }
+    }
+
+    & .about_other {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  & .about_advantages {
+    background-color: darken($em-backgroundColor-base, 5%);
+    padding-bottom: 40px;
+
+    & .about_title {
+      height: 150px;
+      text-align: center;
+
+      & h4 {
+        text-align: center;
+        padding-top: 60px;
+        font-size: 28px;
+        color: darken($em-textColor-base, 70%);
+      }
+
+      & span {
+        color: darken($em-textColor-base, 50%);
+      }
+    }
+
+    & .about_service {
+      margin: 0 auto;
+
+      & dd {
+        color: darken($em-textColor-base, 70%);
+        font-weight: 400;
+      }
+    }
+  }
+
+  & .about_team {
+    padding-bottom: 40px;
+
+    & .about_title {
+      height: 100px;
+      text-align: center;
+
+      & h4 {
+        text-align: center;
+        padding-top: 60px;
+        font-size: 28px;
+        color: darken($em-textColor-base, 70%);
+      }
+
+      & span {
+        color: darken($em-textColor-base, 50%);
+      }
+    }
+
+    & .team_dec {
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    & .team_img {
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        width: 260px;
+        margin: 0 10px 10px 0;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .em_about_page {
+    & .about_introduce {
+      & .about_title {
+        h4 {
+          font-size: 20px;
+        }
+      }
+
+      & .about_dec {
+        p {
+          padding: 0 20px;
+        }
+      }
+    }
+
+    & .about_advantages {
+      & .about_title {
+        & h4 {
+          font-size: 20px;
+        }
+      }
+
+      & .about_service {
+        & dd {
+          text-align: justify;
+          padding: 6px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    & .about_team {
+      & .about_title {
+        h4 {
+          font-size: 20px;
+        }
+      }
+
+      & .team_dec {
+        p {
+          text-align: justify;
+        }
+
+      }
+    }
+  }
+}
