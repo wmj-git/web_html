@@ -13,14 +13,33 @@
       text-align: center; }
   .em_case_page .tab-content {
     margin-top: 20px;
-    color: #000;
-    margin-bottom: 20px; }
+    color: #000; }
     .em_case_page .tab-content .case_list {
-      padding: 0 20px 20px 0; }
+      padding: 0 20px 10px 0;
+      text-align: center; }
       .em_case_page .tab-content .case_list img {
-        width: 250px;
+        width: 265px;
         height: 160px; }
+      .em_case_page .tab-content .case_list dd {
+        margin-bottom: 0; }
       .em_case_page .tab-content .case_list dt {
-        border: 1px solid #f00; }
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+        padding-left: 10px;
+        background-color: #d9d9d9;
+        color: #333333; }
+
+@media (max-width: 768px) {
+  .em_case_page .tab-content .case_list {
+    text-align: center; }
+    .em_case_page .tab-content .case_list img {
+      width: 260px;
+      height: 100%; }
+    .em_case_page .tab-content .case_list dt {
+      height: 30px;
+      line-height: 30px;
+      width: 260px;
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=em_case_page.css.map */
