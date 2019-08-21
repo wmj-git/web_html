@@ -1,10 +1,23 @@
+@import "../../css/scss/variable";
 .em_contact {
   & .em_contact_img1 {
     display: none;
   }
 
-  & .em_footer_left {
-    color: #fff;
+  & .em_status {
+    padding-top: 150px;
+    padding-right: 30px;
+
+    & .em_footer_left {
+      color: $em-textColor-base;
+      float: left;
+      text-align: center;
+    }
+
+    & .em_footer_right {
+      color: $em-textColor-base;
+      float: right;
+    }
   }
 
   & ul.em_contact_main {
@@ -58,10 +71,15 @@
 
 @media (max-width: 768px) {
   .em_contact {
+    padding-bottom: 40px;
     & .em_contact_img {
       img {
         height: 80%;
       }
+    }
+
+    & .em_status {
+      padding-top: 10px;
     }
 
     & .em_contact_top {
@@ -69,25 +87,10 @@
     }
 
     & ul.em_contact_main {
+      padding-bottom: 0;
       & li {
         font-size: 14px;
       }
     }
   }
 }
-
-/*
-@media (max-width: 1500px) {
-  .em_contact {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    & .em_contact_img1 {
-      display: block;
-    }
-
-    & .em_contact_img {
-      display: none;
-    }
-  }
-}
-*/
