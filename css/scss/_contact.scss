@@ -7,13 +7,12 @@
     color: $em-textColor-base;
     padding-left: 0;
     padding-top: 30px;
-
+    padding-bottom: 30px;
     & li {
       list-style: none;
-      height: 44px;
       font-size: 18px;
       line-height: 44px;
-      margin-top: 15px;
+      padding-top: 15px;
 
       & span {
         float: left;
@@ -74,6 +73,8 @@
 
 @media (max-width: 1500px) {
   .em_contact {
+    padding-top: 20px;
+    padding-bottom: 40px;
     & .em_contact_img1 {
       display: block;
     }

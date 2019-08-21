@@ -5,6 +5,7 @@ a {
   position: relative;
   margin: 0 auto;
   height: 100%;
+
   .row {
     position: relative;
     margin: 0 auto;
@@ -196,6 +197,7 @@ a {
 @media (max-width:768px) {
   .em_case {
     height: auto;
+    padding: 20px 0;
     .row {
       .em_ljzx {
         width: 110px;
