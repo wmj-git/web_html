@@ -3,11 +3,16 @@
     display: none;
   }
 
+  & .em_footer_left {
+    color: #fff;
+  }
+
   & ul.em_contact_main {
     color: $em-textColor-base;
     padding-left: 0;
     padding-top: 30px;
     padding-bottom: 30px;
+
     & li {
       list-style: none;
       font-size: 18px;
@@ -39,7 +44,7 @@
       }
 
       &:hover {
-        .contact_type, .contact_address,.contact_business {
+        .contact_type, .contact_address, .contact_business {
           background-position: 0 -44px;
         }
       }
@@ -71,6 +76,7 @@
   }
 }
 
+/*
 @media (max-width: 1500px) {
   .em_contact {
     padding-top: 20px;
@@ -84,3 +90,4 @@
     }
   }
 }
+*/

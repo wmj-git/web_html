@@ -21,7 +21,7 @@
     <script src="js/em_js/cute.transitions.all.js" type="text/javascript"></script>
     <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jquery.fullpage.min.js" type="text/javascript"></script>
+    <script src="js/fullpage.js" type="text/javascript"></script>
     <!-- <script src="js/scrolloverflow.min.js" type="text/javascript"></script>-->
     <title>首页</title>
 </head>
@@ -51,7 +51,7 @@
         </nav>
     </div>
     <div id="fullpage" class="fullpage">
-        <div class="section pageOne fp-auto-height" data-anchor="page1">
+        <div class="section pageOne fp-auto-height">
             <div class="c-860 c-demoslider">
                 <div id="cuteslider_3_wrapper" class="cs-circleslight">
                     <div id="cuteslider_3" class="cute-slider" data-width="960" data-height="420" data-overpause="true">
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <div class="section pageTwo " data-anchor="page2">
+        <div class="section pageTwo ">
             <div class="em_case">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
@@ -177,7 +177,7 @@
                 </div>
             </div>
         </div>
-        <div class="section pageThree " data-anchor="page3">
+        <div class="section pageThree ">
             <div class="em_pro container">
                 <div class="row">
                     <div class="col-xs-12 col-md-8">
@@ -307,7 +307,7 @@
                 </div>
             </div>
         </div>
-        <div class="section pageFour" data-anchor="page4">
+        <div class="section pageFour" >
             <div class="em_about container">
                 <div class="row">
                     <div class=" em_aboutTitle col-xs-12 col-md-8">
@@ -432,7 +432,7 @@
                 </div>
             </div>
         </div>
-        <div class="section pageFive" data-anchor="page5">
+        <div class="section pageFive">
             <div class="em_partners container">
                 <div class="row">
                     <div class="em_partnerTitle col-md-6 offset-3">
@@ -554,14 +554,11 @@
                 </div>
             </div>
         </div>
-        <div class="section pageSix" data-anchor="page6">
+        <div class="section pageSix">
             <div class="em_contact container">
                 <div class="row">
                     <div class="em_contact_img col-md-6">
                         <img src="img/em_contact/contact_img.png">
-                    </div>
-                    <div class="em_contact_img1 col-md-6">
-                        <img src="img/em_contact/contact_img1.png">
                     </div>
                     <div class="col-md-6">
                         <div class="em_contact_top">
@@ -588,85 +585,98 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="col-md-12">
+                        <div class="em_footer_left">
+                            <span>服务热线：023-63656733 | 68715723</span>
+                            <span>备案号：<a>渝ICP备11006547号</a></span>
+                            渝公网安备50010702500725号
+                        </div>
+                        <div class="em_footer_right">
+                            <img src="img/logo.png">
+                        </div>
+                    </div>
                 </div>
+               <!-- <div class="row">
+                    <div class="em_footer_side">
+                        <div class="row">
+                            <div class="em_footer_left">
+                                <span>服务热线：023-63656733 | 68715723</span>
+                                <span>备案号：<a>渝ICP备11006547号</a></span>
+                                渝公网安备50010702500725号
+                            </div>
+                            <div class="em_footer_right">
+                                <img src="img/logo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
             </div>
         </div>
 
         <!--footer-->
-          <!-- <div class="section pageFooter fp-auto-height">
-               <div class="em_footer_side">
-                   <div class="row">
-                       <div class="em_footer_left">
-                               <span>服务热线：023-63656733 | 68715723</span>
-                               <span>备案号：<a>渝ICP备11006547号</a></span>
-                               渝公网安备50010702500725号
-                       </div>
-                       <div class="em_footer_right">
-                           <img src="img/logo.png">
-                       </div>
-                   </div>
-               </div>
-           </div>-->
+        <!--<div class="section pageFooter fp-auto-height">
+            <div class="em_footer_side">
+                <div class="row">
+                    <div class="em_footer_left">
+                        <span>服务热线：023-63656733 | 68715723</span>
+                        <span>备案号：<a>渝ICP备11006547号</a></span>
+                        渝公网安备50010702500725号
+                    </div>
+                    <div class="em_footer_right">
+                        <img src="img/logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>-->
     </div>
-
-    <div id="fp-nav" class="left" style="color: rgb(255, 255, 255); margin-top: -43.5px;">
-        <ul id="menu">
-            <li data-menuanchor='page1'><a href="#" class="active"><span></span></a></li>
-            <li data-menuanchor='page2'><a href="#"><span></span></a></li>
-            <li data-menuanchor='page3'><a href="#"><span></span></a></li>
-            <li data-menuanchor='page4'><a href="#"><span></span></a></li>
-            <li data-menuanchor='page5'><a href="#"><span></span></a></li>
-            <li data-menuanchor='page6'><a href="#"><span></span></a></li>
-        </ul>
-    </div>
-    <script type="text/javascript">
-        var cuteslider3 = new Cute.Slider();
-        cuteslider3.setup("cuteslider_3", "cuteslider_3_wrapper", "css/slider_shuffing.css");
-        cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_START, function (event) {
-        });
-        cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_END, function (event) {
-        });
-        cuteslider3.api.addEventListener(Cute.SliderEvent.WATING, function (event) {
-        });
-        cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_NEXT_SLIDE, function (event) {
-        });
-        cuteslider3.api.addEventListener(Cute.SliderEvent.WATING_FOR_NEXT, function (event) {
-        });
-    </script>
-    <script>
-        $(function () {
-            $('#fullpage').fullpage({
-                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-            });
-        });
-        $(window).resize(function () {
-            autoScrolling();
-        });
-
-        function autoScrolling() {
-            var $win = $(window).width();
-            /*屏幕可见区域小于1024时，关闭全屏滚动，使用自带的滚动条*/
-            if ($win < 1024) {
-                $.fn.fullpage.setAutoScrolling(false);
-            } else {
-                $.fn.fullpage.setAutoScrolling(true);
-            }
-        }
-
-        autoScrolling();
-
-    </script>
-
-    <script type="text/javascript">
-        $(function () {
-            var btnR = document.getElementById('btn_right');
-            btnR.onclick = function () {
-                console.log("点击按钮");
-            }
-        });
-
-    </script>
-
 </div>
+<script type="text/javascript">
+    var cuteslider3 = new Cute.Slider();
+    cuteslider3.setup("cuteslider_3", "cuteslider_3_wrapper", "css/slider_shuffing.css");
+    cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_START, function (event) {
+    });
+    cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_END, function (event) {
+    });
+    cuteslider3.api.addEventListener(Cute.SliderEvent.WATING, function (event) {
+    });
+    cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_NEXT_SLIDE, function (event) {
+    });
+    cuteslider3.api.addEventListener(Cute.SliderEvent.WATING_FOR_NEXT, function (event) {
+    });
+</script>
+<script>
+    $(function () {
+        $('#fullpage').fullpage({
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+            navigation:true
+        });
+    });
+    $(window).resize(function () {
+        autoScrolling();
+    });
+
+    function autoScrolling() {
+        var $win = $(window).width();
+        /*屏幕可见区域小于1024时，关闭全屏滚动，使用自带的滚动条*/
+        if ($win < 1024) {
+            $.fn.fullpage.setAutoScrolling(false);
+        } else {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    }
+
+    autoScrolling();
+
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        var btnR = document.getElementById('btn_right');
+        btnR.onclick = function () {
+            console.log("点击按钮");
+        }
+    });
+
+</script>
 </body>
 </html>
