@@ -46,11 +46,11 @@ a {
             background-repeat: no-repeat;
             background-position: center top; }
         .em_contact_page .contact_type .contact_type_list a:hover {
-          color: #90c42f; }
+          color: #86caff; }
           .em_contact_page .contact_type .contact_type_list a:hover h4 {
             color: #666666; }
           .em_contact_page .contact_type .contact_type_list a:hover i {
-            background-color: #90c42f; }
+            background-color: #86caff; }
           .em_contact_page .contact_type .contact_type_list a:hover .icon_phone, .em_contact_page .contact_type .contact_type_list a:hover .icon_qq, .em_contact_page .contact_type .contact_type_list a:hover .icon_mail {
             background-position: 0 -128px; }
   .em_contact_page .contact_weixin {
