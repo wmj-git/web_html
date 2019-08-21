@@ -1,42 +1,121 @@
-.em_contact_page {
-  min-height: 460px;
-  background: url("../../../img/em_contact_page/contact_banner_03.jpg") no-repeat;
-  background-size: cover;
+@import "../../scss/variable";
 
-  & .contact_map {
-    text-align: center;
-    padding: 200px 0 100px 0;
-    margin: 0 auto;
+a {
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
   }
+}
 
-  & .contact_main {
-    padding: 80px 0 180px 0;
+.em_contact_page {
+  overflow: hidden;
+
+  & .contact_type {
     margin: 0 auto;
-    color: #fff;
-    text-align: center;
 
-    & .contact_details {
-      & .contact_details_list {
-        padding: 16px;
-        text-align: left;
+    & .contact_type_list {
+      height: 420px;
+      border-left: 1px solid darken($em-borderColor-base, 10%);
+      text-align: center;
+      &:nth-child(3) {
+        border-right: 1px solid darken($em-borderColor-base, 10%);
+      }
+      & a, & h4 {
+        color: darken($em-textColor-base, 60%);
+      }
+      & h4 {
+        font-size: 16px;
+      }
 
-        & img {
-          padding-right: 10px;
+      & p {
+        font-size: 30px;
+      }
+
+      & a {
+        position: relative;
+        top: 90px;
+
+        & i {
+          height: 128px;
+          width: 128px;
+          background-color: darken($em-backgroundColor-base, 5%);
+          border-radius: 64px;
+          display: block;
+          margin: 0 auto 20px;
+          transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+
+          &.icon_phone {
+            background-image: url("../../../img/em_contact_page/icon_phone.png");
+            background-repeat: no-repeat;
+            background-position: center top;
+          }
+
+          &.icon_qq {
+            background-image: url("../../../img/em_contact_page/icon_qq.png");
+            background-repeat: no-repeat;
+            background-position: center top;
+          }
+
+          &.icon_mail {
+            background-image: url("../../../img/em_contact_page/icon_mail.png");
+            background-repeat: no-repeat;
+            background-position: center top;
+          }
+        }
+
+        &:hover {
+          color: $em-backgroundColor-highlight;
+
+          & h4 {
+            color: darken($em-textColor-base, 60%);
+          }
+
+          & i {
+            background-color: $em-backgroundColor-highlight;
+          }
+
+          & .icon_phone, .icon_qq, .icon_mail {
+            background-position: 0 -128px;
+          }
         }
       }
     }
   }
-}
-@media(max-width:768px){
-  .em_contact_page{
-    & .contact_map{
-      padding: 80px 0 20px 0;
+  & .contact_weixin{
+    background: url(../../../img/em_contact_page/bg_weixin.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+    height: 450px;
+    text-align: center;
+    color: $em-textColor-base;
+    & .contact_content{
+      padding: 30px 0;
     }
-    & .contact_main {
-      padding: 20px 20px 20px 30px;
-      & .contact_details {
-        & .contact_details_list {
-          padding: 10px;
+  }
+  & .contact_map{
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 768px) {
+  .em_contact_page {
+    & .contact_type {
+      padding-bottom: 40px;
+      & .contact_type_list {
+        height: 250px;
+        & a {
+          top: 40px;
+        }
+        & h4{
+          font-size: 15px;
+        }
+        & p{
+          font-size: 18px;
         }
       }
     }

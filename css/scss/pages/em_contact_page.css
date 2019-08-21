@@ -1,28 +1,81 @@
+a {
+  text-decoration: none; }
+  a:hover {
+    cursor: pointer;
+    text-decoration: none; }
+
 .em_contact_page {
-  min-height: 460px;
-  background: url("../../../img/em_contact_page/contact_banner_03.jpg") no-repeat;
-  background-size: cover; }
-  .em_contact_page .contact_map {
-    text-align: center;
-    padding: 200px 0 100px 0;
+  overflow: hidden; }
+  .em_contact_page .contact_type {
     margin: 0 auto; }
-  .em_contact_page .contact_main {
-    padding: 80px 0 180px 0;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center; }
-    .em_contact_page .contact_main .contact_details .contact_details_list {
-      padding: 16px;
-      text-align: left; }
-      .em_contact_page .contact_main .contact_details .contact_details_list img {
-        padding-right: 10px; }
+    .em_contact_page .contact_type .contact_type_list {
+      height: 420px;
+      border-left: 1px solid #e6e6e6;
+      text-align: center; }
+      .em_contact_page .contact_type .contact_type_list:nth-child(3) {
+        border-right: 1px solid #e6e6e6; }
+      .em_contact_page .contact_type .contact_type_list a, .em_contact_page .contact_type .contact_type_list h4 {
+        color: #666666; }
+      .em_contact_page .contact_type .contact_type_list h4 {
+        font-size: 16px; }
+      .em_contact_page .contact_type .contact_type_list p {
+        font-size: 30px; }
+      .em_contact_page .contact_type .contact_type_list a {
+        position: relative;
+        top: 90px; }
+        .em_contact_page .contact_type .contact_type_list a i {
+          height: 128px;
+          width: 128px;
+          background-color: #f2f2f2;
+          border-radius: 64px;
+          display: block;
+          margin: 0 auto 20px;
+          transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s; }
+          .em_contact_page .contact_type .contact_type_list a i.icon_phone {
+            background-image: url("../../../img/em_contact_page/icon_phone.png");
+            background-repeat: no-repeat;
+            background-position: center top; }
+          .em_contact_page .contact_type .contact_type_list a i.icon_qq {
+            background-image: url("../../../img/em_contact_page/icon_qq.png");
+            background-repeat: no-repeat;
+            background-position: center top; }
+          .em_contact_page .contact_type .contact_type_list a i.icon_mail {
+            background-image: url("../../../img/em_contact_page/icon_mail.png");
+            background-repeat: no-repeat;
+            background-position: center top; }
+        .em_contact_page .contact_type .contact_type_list a:hover {
+          color: #90c42f; }
+          .em_contact_page .contact_type .contact_type_list a:hover h4 {
+            color: #666666; }
+          .em_contact_page .contact_type .contact_type_list a:hover i {
+            background-color: #90c42f; }
+          .em_contact_page .contact_type .contact_type_list a:hover .icon_phone, .em_contact_page .contact_type .contact_type_list a:hover .icon_qq, .em_contact_page .contact_type .contact_type_list a:hover .icon_mail {
+            background-position: 0 -128px; }
+  .em_contact_page .contact_weixin {
+    background: url(../../../img/em_contact_page/bg_weixin.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+    height: 450px;
+    text-align: center;
+    color: #fff; }
+    .em_contact_page .contact_weixin .contact_content {
+      padding: 30px 0; }
+  .em_contact_page .contact_map {
+    margin: 0 auto; }
 
 @media (max-width: 768px) {
-  .em_contact_page .contact_map {
-    padding: 80px 0 20px 0; }
-  .em_contact_page .contact_main {
-    padding: 20px 20px 20px 30px; }
-    .em_contact_page .contact_main .contact_details .contact_details_list {
-      padding: 10px; } }
+  .em_contact_page .contact_type {
+    padding-bottom: 40px; }
+    .em_contact_page .contact_type .contact_type_list {
+      height: 250px; }
+      .em_contact_page .contact_type .contact_type_list a {
+        top: 40px; }
+      .em_contact_page .contact_type .contact_type_list h4 {
+        font-size: 15px; }
+      .em_contact_page .contact_type .contact_type_list p {
+        font-size: 18px; } }
 
 /*# sourceMappingURL=em_contact_page.css.map */

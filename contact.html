@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/scss/pages/em_contact_page.css">
     <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=dpB1d25b7smGMe8evaIAxw881Aq3AUfb"></script>
     <title>联系我们</title>
 </head>
 <body>
@@ -41,31 +43,51 @@
     </nav>
 </div>
 <div class="em_contact_page">
-    <div class="container">
-        <div class="row">
-            <div class="contact_map col-md-8">
-                <div class="small_pic"><a href="#pic_one" id="btnDialog"> <img
-                        src="img/em_contact_page/contact_03.jpg" width="253" height="190"> </a></div>
-            </div>
+    <div class="row">
+        <div class=" col-md-12">
+            <img src="img/em_contact_page/bn3.jpg " class="img-responsive">
         </div>
-        <div class="row">
-            <div class="col-md-8 contact_main">
-                <div class="row contact_details">
-                    <div class="col-md-8 contact_details_list">
-                        <span><img src="img/em_contact_page/contact_07.png">地址：重庆九龙坡区烟灯山重庆国际科技企业孵化园C栋2楼</span>
-                    </div>
-                    <div class="col-md-4 contact_details_list">
-                        <span><img src="img/em_contact_page/contact_10.png">公司电话：023-63656733 </span>
-                    </div>
-                    <div class="col-md-8 contact_details_list">
-                        <span><img
-                                src="img/em_contact_page/contact_15.png">公司传真：106691600（联通） |&nbsp; 10666123（移动）</span>
-                    </div>
-                    <div class="col-md-4 contact_details_list">
-                        <span><img src="img/em_contact_page/contact_18.png">邮箱：2805681836</span>
-                    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 contact_type">
+            <div class="row">
+                <div class="col-md-4 contact_type_list">
+                    <a href="#">
+                        <i class="icon_phone"></i>
+                        <h4>给我们打电话</h4>
+                        <p>023-63656733</p>
+                    </a>
+                </div>
+                <div class="col-md-4 contact_type_list">
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=2805681836&site=qq&menu=yes  ">
+                        <i class="icon_qq"></i>
+                        <h4>QQ在线联系</h4>
+                        <p>2805681836</p>
+                    </a>
+                </div>
+                <div class="col-md-4 contact_type_list">
+                    <a href="#">
+                        <i class="icon_mail"></i>
+                        <h4>给我们发邮件</h4>
+                        <p>106691600（联通） |&nbsp; 10666123（移动）</p>
+                    </a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="contact_weixin col-md-12">
+            <div class="contact_content">
+                <h4>关注微信</h4>
+                <p>扫一扫二维码，关注我们的微信公众号</p>
+                <img src="img/em_contact_page/weixin.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 contact_map">
+            <div id="allmap" class="address_map"
+           style="height: 350px;"></div>
         </div>
     </div>
 </div>
@@ -83,5 +105,33 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    map.centerAndZoom(new BMap.Point(106.492878, 29.548916), 18);
+    var walking = new BMap.WalkingRoute(map, {
+        renderOptions: {
+            map: map,
+            autoViewport: true
+        }
+    });
+
+    map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+    /*    function showInfo(e){
+            alert(e.point.lng + ", " + e.point.lat);
+        }
+        map.addEventListener("click", showInfo);//点击获取指定位置的坐标信息
+        */
+
+
+    var pt = new BMap.Point(106.492878, 29.548916);
+    var myIcon = new BMap.Icon("img/em_contact_page/position.png", new BMap.Size(30, 30));
+    var marker2 = new BMap.Marker(pt, {icon: myIcon});  // 创建标注
+    map.addOverlay(marker2);
+
+</script>
+<script type="text/javascript">var online =new Array();</script>
+<script type="text/javascript" src="http //webpresence.qq.com/getonline?Type=1&2805681836"></script>
 </body>
 </html>
