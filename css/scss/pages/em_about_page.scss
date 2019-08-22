@@ -2,7 +2,6 @@
 
 .em_about_page {
   overflow: hidden;
-
   & .about_introduce {
     & .about_title {
       height: 100px;
@@ -127,8 +126,14 @@
       & .about_service {
         & dd {
           text-align: justify;
-          padding: 6px;
+          padding: 20px;
           font-size: 14px;
+        }
+        & img{
+          width: 100%;
+          height: auto;
+          padding: 0 30px;
+          overflow: hidden;
         }
       }
     }

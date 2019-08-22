@@ -46,18 +46,12 @@ a {
         background: #FFF8FB;
         margin-bottom: 20px;
 
-        & ul li {
-          height: 40px;
-          margin-left: -40px;
-          border: 1px solid #EEE;
-          border-top: 0;
-
-          & a, & span {
-            padding-left: 30px;
-            display: block;
-            line-height: 40px;
-            font-size: 16px;
-            color: darken($em-textColor-base, 60%);
+        & a.nav-link{
+          color: darken($em-textColor-base,60%);
+          border-radius: 0;
+          &.active{
+            color: $em-textColor-base;
+            background:lighten($em-backgroundColor-highlight,20%);
           }
         }
       }
@@ -164,7 +158,6 @@ a {
         & .item_right {
           & .item_title {
             border-bottom: 1px dashed darken($em-borderColor-base, 15%);
-            color: $em-backgroundColor-highlight;
             height: 44px;
             line-height: 44px;
             font-size: 18px;
@@ -174,7 +167,8 @@ a {
             overflow: hidden;
 
             & a {
-              color: $em-backgroundColor-highlight;
+              color: black;
+              font-weight: 900;
 
               &:hover {
                 color: darken($em-textColor-base, 100%);

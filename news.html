@@ -54,11 +54,14 @@
                     <span>News</span>
                 </div>
                 <div class="news_list">
-                    <ul>
-                        <li><a href="#">公司新闻</a></li>
-                        <li><a href="#">行业新闻</a></li>
-                        <li><a href="#">媒体报道</a></li>
-                    </ul>
+                    <div class="nav nav-pills  justify-content-center flex-column" role="tablist" id="v-pills-tab">
+                        <a class="nav-link active" id="tab_company" data-toggle="tab" href="#tab1" role="tab"
+                           aria-controls="tab1" aria-selected="true">公司新闻</a>
+                        <a class="nav-link" href="#tab2" id="tab_hangye" role="tab" data-toggle="tab"
+                           aria-controls="tab2" aria-selected="false">行业动态</a>
+                        <a class="nav-link" href="#tab3" id="tab_media" role="tab" data-toggle="tab"
+                           aria-controls="tab3" aria-selected="false">媒体报道</a>
+                    </div>
                 </div>
             </div>
             <div class="news_contact">
@@ -75,85 +78,175 @@
             </div>
         </div>
         <div class="col-md-9">
-            <div class="news_right_title_nav">
-                <div class="news_right_title">
-                    <ul>
-                        <li><img src="img/right_wz.png" class="news_right_title_img"></li>
-                        <li>
-                            <span>您所在的位置：</span>
-                            <a href="index.html">主页</a>>
-                            <span>新闻资讯</span>>
-                        </li>
-                    </ul>
+            <div class="tab-content vertical-tab-content" id="v-pills-tabContent">
+                <div role="tabpanel" class="tab-pane show fade active" id="tab1" aria-labelledby="tab_company">
+                    <div class="news_right_title_nav">
+                        <div class="news_right_title">
+                            <ul>
+                                <li><img src="img/right_wz.png" class="news_right_title_img"></li>
+                                <li>
+                                    <span>您所在的位置：</span>
+                                    <a href="index.html">主页</a>>
+                                    <span>公司新闻</span>>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="news_right_list">
+                        <ul>
+                            <li class="news_item row ">
+                                <div class="col-md-4 item_left">
+                                    <img src="img/em_news_page/news_list1.jpg">
+                                </div>
+                                <div class="col-md-8 item_right">
+                                    <div class="item_title">
+                                        <span><a href="details.html">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
+                                    </div>
+                                    <div class="item_con"><span>
+                                才建设是组织发展的重要环节，有人说现代企业间的竞争就是人才的竞争，可见人才培养的重要性。但现实中很多主管领导认为人才培养工作只是人力资源部门的分内之事，与自己八竿......
+                            </span></div>
+                                    <div class="item_more">
+                                        <a href="#">more>></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news_item row ">
+                                <div class="col-md-4 item_left">
+                                    <img src="img/em_news_page/news_list1.jpg">
+                                </div>
+                                <div class="col-md-8 item_right">
+                                    <div class="item_title">
+                                        <span><a href="#">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
+                                    </div>
+                                    <div class="item_con"><span>
+                                才建设是组织发展的重要环节，有人说现代企业间的竞争就是人才的竞争，可见人才培养的重要性。但现实中很多主管领导认为人才培养工作只是人力资源部门的分内之事，与自己八竿......
+                            </span></div>
+                                    <div class="item_more">
+                                        <a href="#">more>></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news_item row ">
+                                <div class="col-md-4 item_left">
+                                    <img src="img/em_news_page/news_list1.jpg">
+                                </div>
+                                <div class="col-md-8 item_right">
+                                    <div class="item_title">
+                                        <span><a href="#">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
+                                    </div>
+                                    <div class="item_con"><span>
+                                才建设是组织发展的重要环节，有人说现代企业间的竞争就是人才的竞争，可见人才培养的重要性。但现实中很多主管领导认为人才培养工作只是人力资源部门的分内之事，与自己八竿......
+                            </span></div>
+                                    <div class="item_more">
+                                        <a href="#">more>></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news_item row ">
+                                <div class="col-md-4 item_left">
+                                    <img src="img/em_news_page/news_list1.jpg">
+                                </div>
+                                <div class="col-md-8 item_right">
+                                    <div class="item_title">
+                                        <span><a href="#">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
+                                    </div>
+                                    <div class="item_con"><span>
+                                才建设是组织发展的重要环节，有人说现代企业间的竞争就是人才的竞争，可见人才培养的重要性。但现实中很多主管领导认为人才培养工作只是人力资源部门的分内之事，与自己八竿......
+                            </span></div>
+                                    <div class="item_more">
+                                        <a href="#">more>></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="news_right_list">
-                <ul>
-                    <li class="news_item row ">
-                        <div class="col-md-4 item_left">
-                            <img src="img/em_news_page/news_list1.jpg">
+                <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab_hangye">
+                    <div class="news_right_title_nav">
+                        <div class="news_right_title">
+                            <ul>
+                                <li><img src="img/right_wz.png" class="news_right_title_img"></li>
+                                <li>
+                                    <span>您所在的位置：</span>
+                                    <a href="index.html">主页</a>>
+                                    <span>行业动态</span>>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-8 item_right">
-                            <div class="item_title">
-                                <span><a href="#">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
-                            </div>
-                            <div class="item_con"><span>
+                    </div>
+                    <div class="news_right_list">
+                        <ul>
+                            <li class="news_item row ">
+                                <div class="col-md-4 item_left">
+                                    <img src="img/em_news_page/news_list1.jpg">
+                                </div>
+                                <div class="col-md-8 item_right">
+                                    <div class="item_title">
+                                        <span><a href="details.html">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
+                                    </div>
+                                    <div class="item_con"><span>
                                 才建设是组织发展的重要环节，有人说现代企业间的竞争就是人才的竞争，可见人才培养的重要性。但现实中很多主管领导认为人才培养工作只是人力资源部门的分内之事，与自己八竿......
                             </span></div>
-                            <div class="item_more">
-                                <a href="#">more>></a>
-                            </div>
+                                    <div class="item_more">
+                                        <a href="#">more>></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab_media">
+                    <div class="news_right_title_nav">
+                        <div class="news_right_title">
+                            <ul>
+                                <li><img src="img/right_wz.png" class="news_right_title_img"></li>
+                                <li>
+                                    <span>您所在的位置：</span>
+                                    <a href="index.html">主页</a>>
+                                    <span>媒体报道</span>>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="news_item row ">
-                        <div class="col-md-4 item_left">
-                            <img src="img/em_news_page/news_list1.jpg">
-                        </div>
-                        <div class="col-md-8 item_right">
-                            <div class="item_title">
-                                <span><a href="#">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
-                            </div>
-                            <div class="item_con"><span>
+                    </div>
+                    <div class="news_right_list">
+                        <ul>
+                            <li class="news_item row ">
+                                <div class="col-md-4 item_left">
+                                    <img src="img/em_news_page/news_list1.jpg">
+                                </div>
+                                <div class="col-md-8 item_right">
+                                    <div class="item_title">
+                                        <span><a href="details.html">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
+                                    </div>
+                                    <div class="item_con"><span>
                                 才建设是组织发展的重要环节，有人说现代企业间的竞争就是人才的竞争，可见人才培养的重要性。但现实中很多主管领导认为人才培养工作只是人力资源部门的分内之事，与自己八竿......
                             </span></div>
-                            <div class="item_more">
-                                <a href="#">more>></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="news_item row ">
-                        <div class="col-md-4 item_left">
-                            <img src="img/em_news_page/news_list1.jpg">
-                        </div>
-                        <div class="col-md-8 item_right">
-                            <div class="item_title">
-                                <span><a href="#">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
-                            </div>
-                            <div class="item_con"><span>
+                                    <div class="item_more">
+                                        <a href="#">more>></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="news_item row ">
+                                <div class="col-md-4 item_left">
+                                    <img src="img/em_news_page/news_list1.jpg">
+                                </div>
+                                <div class="col-md-8 item_right">
+                                    <div class="item_title">
+                                        <span><a href="details.html">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
+                                    </div>
+                                    <div class="item_con"><span>
                                 才建设是组织发展的重要环节，有人说现代企业间的竞争就是人才的竞争，可见人才培养的重要性。但现实中很多主管领导认为人才培养工作只是人力资源部门的分内之事，与自己八竿......
                             </span></div>
-                            <div class="item_more">
-                                <a href="#">more>></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="news_item row ">
-                        <div class="col-md-4 item_left">
-                            <img src="img/em_news_page/news_list1.jpg">
-                        </div>
-                        <div class="col-md-8 item_right">
-                            <div class="item_title">
-                                <span><a href="#">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
-                            </div>
-                            <div class="item_con"><span>
-                                才建设是组织发展的重要环节，有人说现代企业间的竞争就是人才的竞争，可见人才培养的重要性。但现实中很多主管领导认为人才培养工作只是人力资源部门的分内之事，与自己八竿......
-                            </span></div>
-                            <div class="item_more">
-                                <a href="#">more>></a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                                    <div class="item_more">
+                                        <a href="#">more>></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -178,6 +271,7 @@
             </li>
         </ul>
     </nav>
+
 </div>
 <!--footer-->
 <div class="em_footer_side">

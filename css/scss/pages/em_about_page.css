@@ -70,8 +70,13 @@
     font-size: 20px; }
   .em_about_page .about_advantages .about_service dd {
     text-align: justify;
-    padding: 6px;
+    padding: 20px;
     font-size: 14px; }
+  .em_about_page .about_advantages .about_service img {
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+    overflow: hidden; }
   .em_about_page .about_team .about_title h4 {
     font-size: 20px; }
   .em_about_page .about_team .team_dec p {

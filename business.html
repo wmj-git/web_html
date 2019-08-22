@@ -54,11 +54,11 @@
                         <span>Business</span>
                     </div>
                     <div class="business_list">
-                        <ul>
-                            <li><a href="#">三维电子沙盘</a></li>
-                            <li><a href="#">管理系统</a></li>
-                            <li><a href="#">可视化平台</a></li>
-                        </ul>
+                        <div class="nav nav-pills  justify-content-center flex-column" role="tablist" id="v-pills-tab">
+                            <a class="nav-link active" id="tab_three" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">三维电子沙盘</a>
+                            <a class="nav-link" href="#tab2" id="tab_sys"  role="tab" data-toggle="tab" aria-controls="tab2" aria-selected="false">系统集成</a>
+                            <a class="nav-link" href="#tab3" id="tab_pro"  role="tab" data-toggle="tab" aria-controls="tab3" aria-selected="false">产品销售</a>
+                        </div>
                     </div>
                 </div>
                 <div class="business_contact">
@@ -75,86 +75,175 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="business_right_title_nav">
-                    <div class="business_right_title">
-                        <ul>
-                            <li><img src="img/right_wz.png" class="business_right_title_img"></li>
-                            <li>
-                                <span>您所在的位置：</span>
-                                <a href="index.html">主页</a>>
-                                <span>主营业务</span>>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="business_right_list">
-                    <ul>
-                        <li class="business_item row ">
-                            <div class="col-md-4 item_left">
-                                <img src="img/em_business_page/business1.jpg">
+                <div class="tab-content vertical-tab-content" id="v-pills-tabContent">
+                    <div role="tabpanel" class="tab-pane show fade active" id="tab1" aria-labelledby="tab_three">
+                        <div class="business_right_title_nav">
+                            <div class="business_right_title">
+                                <ul>
+                                    <li><img src="img/right_wz.png" class="business_right_title_img"></li>
+                                    <li>
+                                        <span>您所在的位置：</span>
+                                        <a href="index.html">主页</a>>
+                                        <span>三维电子沙盘</span>>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-8 item_right">
-                                <div class="item_title">
-                                    <span><a href="#">房产楼宇电子沙盘</a></span>
-                                </div>
-                                <div class="item_con"><span>
+                        </div>
+                        <div class="business_right_list">
+                            <ul>
+                                <li class="business_item row ">
+                                    <div class="col-md-4 item_left">
+                                        <img src="img/em_business_page/business1.jpg">
+                                    </div>
+                                    <div class="col-md-8 item_right">
+                                        <div class="item_title">
+                                            <span><a href="#">房产楼宇电子沙盘</a></span>
+                                        </div>
+                                        <div class="item_con"><span>
                                房产-楼宇三维电子沙盘系统，是虚拟现实技术在房地产行业的最新应用，它是计算机图形学、人机交互技术.....
                             </span></div>
-                                <div class="item_more">
-                                    <a href="#">more>></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="business_item row ">
-                            <div class="col-md-4 item_left">
-                                <img src="img/em_business_page/business1.jpg">
-                            </div>
-                            <div class="col-md-8 item_right">
-                                <div class="item_title">
-                                    <span><a href="#">数字城市</a></span>
-                                </div>
-                                <div class="item_con"><span>
+                                        <div class="item_more">
+                                            <a href="#">more>></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="business_item row ">
+                                    <div class="col-md-4 item_left">
+                                        <img src="img/em_business_page/business1.jpg">
+                                    </div>
+                                    <div class="col-md-8 item_right">
+                                        <div class="item_title">
+                                            <span><a href="#">数字城市</a></span>
+                                        </div>
+                                        <div class="item_con"><span>
                                数字城市是将城市地理、资源、环境、人口、社情和各种社会服务等复杂系统进行数字化、网络化、虚拟仿真、优化决策支持和可视化。通过宽带多媒体信息网络......
                             </span></div>
-                                <div class="item_more">
-                                    <a href="#">more>></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="business_item row ">
-                            <div class="col-md-4 item_left">
-                                <img src="img/em_business_page/business1.jpg">
-                            </div>
-                            <div class="col-md-8 item_right">
-                                <div class="item_title">
-                                    <span><a href="#">智慧环保</a></span>
-                                </div>
-                                <div class="item_con"><span>
+                                        <div class="item_more">
+                                            <a href="#">more>></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="business_item row ">
+                                    <div class="col-md-4 item_left">
+                                        <img src="img/em_business_page/business1.jpg">
+                                    </div>
+                                    <div class="col-md-8 item_right">
+                                        <div class="item_title">
+                                            <span><a href="#">智慧环保</a></span>
+                                        </div>
+                                        <div class="item_con"><span>
                                 智慧环保”是“数字环保”概念的延伸和拓展，借助物联网技术，把感应器和装备嵌入到各种环境监控对象(物体)中，......
                             </span></div>
-                                <div class="item_more">
-                                    <a href="#">more>></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="business_item row ">
-                            <div class="col-md-4 item_left">
-                                <img src="img/em_business_page/business1.jpg">
-                            </div>
-                            <div class="col-md-8 item_right">
-                                <div class="item_title">
-                                    <span><a href="#">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
-                                </div>
-                                <div class="item_con"><span>
+                                        <div class="item_more">
+                                            <a href="#">more>></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="business_item row ">
+                                    <div class="col-md-4 item_left">
+                                        <img src="img/em_business_page/business1.jpg">
+                                    </div>
+                                    <div class="col-md-8 item_right">
+                                        <div class="item_title">
+                                            <span><a href="#">放任是最大的不信任，人一旦 放任是最大的不信任，人一旦"放任"，就会"</a></span>
+                                        </div>
+                                        <div class="item_con"><span>
                                 才建设是组织发展的重要环节，有人说现代企业间的竞争就是人才的竞争，可见人才培养的重要性。但现实中很多主管领导认为人才培养工作只是人力资源部门的分内之事，与自己八竿......
                             </span></div>
-                                <div class="item_more">
-                                    <a href="#">more>></a>
-                                </div>
+                                        <div class="item_more">
+                                            <a href="#">more>></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab_sys">
+                        <div class="business_right_title_nav">
+                            <div class="business_right_title">
+                                <ul>
+                                    <li><img src="img/right_wz.png" class="business_right_title_img"></li>
+                                    <li>
+                                        <span>您所在的位置：</span>
+                                        <a href="index.html">主页</a>>
+                                        <span>系统集成</span>>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="business_right_list">
+                            <ul>
+                                <li class="business_item row ">
+                                    <div class="col-md-4 item_left">
+                                        <img src="img/em_business_page/business1.jpg">
+                                    </div>
+                                    <div class="col-md-8 item_right">
+                                        <div class="item_title">
+                                            <span><a href="#">房产楼宇电子沙盘</a></span>
+                                        </div>
+                                        <div class="item_con"><span>
+                               房产-楼宇三维电子沙盘系统，是虚拟现实技术在房地产行业的最新应用，它是计算机图形学、人机交互技术.....
+                            </span></div>
+                                        <div class="item_more">
+                                            <a href="#">more>></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="business_item row ">
+                                    <div class="col-md-4 item_left">
+                                        <img src="img/em_business_page/business1.jpg">
+                                    </div>
+                                    <div class="col-md-8 item_right">
+                                        <div class="item_title">
+                                            <span><a href="#">数字城市</a></span>
+                                        </div>
+                                        <div class="item_con"><span>
+                               数字城市是将城市地理、资源、环境、人口、社情和各种社会服务等复杂系统进行数字化、网络化、虚拟仿真、优化决策支持和可视化。通过宽带多媒体信息网络......
+                            </span></div>
+                                        <div class="item_more">
+                                            <a href="#">more>></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab_pro">
+                        <div class="business_right_title_nav">
+                            <div class="business_right_title">
+                                <ul>
+                                    <li><img src="img/right_wz.png" class="business_right_title_img"></li>
+                                    <li>
+                                        <span>您所在的位置：</span>
+                                        <a href="index.html">主页</a>>
+                                        <span>产品销售</span>>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="business_right_list">
+                            <ul>
+                                <li class="business_item row ">
+                                    <div class="col-md-4 item_left">
+                                        <img src="img/em_business_page/business1.jpg">
+                                    </div>
+                                    <div class="col-md-8 item_right">
+                                        <div class="item_title">
+                                            <span><a href="#">房产楼宇电子沙盘</a></span>
+                                        </div>
+                                        <div class="item_con"><span>
+                               房产-楼宇三维电子沙盘系统，是虚拟现实技术在房地产行业的最新应用，它是计算机图形学、人机交互技术.....
+                            </span></div>
+                                        <div class="item_more">
+                                            <a href="#">more>></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
         <nav aria-label="Page navigation example">
