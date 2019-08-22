@@ -90,6 +90,8 @@ a {
             margin-top: -8px; }
           .em_news_page .em_news_container .news_right_title_nav .news_right_title li a {
             color: #999999; }
+          .em_news_page .em_news_container .news_right_title_nav .news_right_title li span:last-child {
+            color: #666666; }
     .em_news_page .em_news_container .news_right_list {
       text-align: left;
       width: 100%;

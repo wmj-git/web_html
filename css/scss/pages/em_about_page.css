@@ -36,9 +36,15 @@
         color: gray; }
     .em_about_page .about_advantages .about_service {
       margin: 0 auto; }
-      .em_about_page .about_advantages .about_service dd {
+      .em_about_page .about_advantages .about_service dt {
         color: #4d4d4d;
-        font-weight: 400; }
+        font-weight: 400;
+        font-size: 15px;
+        padding: 1px; }
+      .em_about_page .about_advantages .about_service img {
+        max-width: 100%;
+        height: auto;
+        overflow: hidden; }
   .em_about_page .about_team {
     padding-bottom: 40px; }
     .em_about_page .about_team .about_title {
@@ -54,6 +60,8 @@
     .em_about_page .about_team .team_dec {
       margin: 0 auto;
       padding: 20px; }
+      .em_about_page .about_team .team_dec p {
+        text-indent: 34px; }
     .em_about_page .about_team .team_img {
       margin: 0 auto;
       text-align: center; }

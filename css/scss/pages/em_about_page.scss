@@ -57,9 +57,16 @@
     & .about_service {
       margin: 0 auto;
 
-      & dd {
+      & dt {
         color: darken($em-textColor-base, 70%);
         font-weight: 400;
+        font-size: 15px;
+        padding: 1px;
+      }
+      & img{
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
       }
     }
   }
@@ -86,6 +93,9 @@
     & .team_dec {
       margin: 0 auto;
       padding: 20px;
+      & p{
+        text-indent: 34px;
+      }
     }
 
     & .team_img {
