@@ -201,6 +201,8 @@ a {
 .em_pro .em_btndiv {
   position: relative;
   top: 45px; }
+  .em_pro .em_btndiv .nav-tabs {
+    border: none; }
   .em_pro .em_btndiv a.abtn {
     position: absolute;
     display: block;
@@ -212,15 +214,15 @@ a {
   .em_pro .em_btndiv a.aleft {
     right: 55px;
     background-position: 0 -30px; }
-  .em_pro .em_btndiv a.agrayleft {
-    background-position: 0 0;
-    cursor: default; }
+    .em_pro .em_btndiv a.aleft.active {
+      background-position: 0 0;
+      cursor: default; }
   .em_pro .em_btndiv a.aright {
     right: 0;
     background-position: -45px 0; }
-  .em_pro .em_btndiv a.agrayright {
-    background-position: -45px -30px;
-    cursor: default; }
+    .em_pro .em_btndiv a.aright.active {
+      background-position: -45px -30px;
+      cursor: default; }
 .em_pro .em_scrollcontainer {
   position: relative;
   left: 10px;
@@ -291,14 +293,12 @@ a {
       height: 0; }
 
 @media (max-width: 768px) {
-  .em_pro {
-    padding-top: 20px;
-    padding-bottom: 40px; }
-    .em_pro .em_btndiv {
-      top: 6px;
-      left: -12px; }
-    .em_pro .em_scrollcontainer {
-      left: 50px; } }
+  em_scrollcontainer
+  .em_pro .em_btndiv {
+    top: 6px;
+    left: -12px; }
+  .em_pro .em_scrollcontainer {
+    left: 50px; } }
 .em_about .em_aboutList {
   padding-top: 30px;
   padding-left: 143px; }

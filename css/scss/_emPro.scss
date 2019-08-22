@@ -9,6 +9,10 @@
     position: relative;
     top: 45px;
 
+    & .nav-tabs {
+      border: none;
+    }
+
     & a {
       &.abtn {
         position: absolute;
@@ -23,22 +27,21 @@
       &.aleft {
         right: 55px;
         background-position: 0 -30px;
-      }
-
-      &.agrayleft {
-        background-position: 0 0;
-        cursor: default;
+        &.active{
+          background-position: 0 0;
+          cursor: default;
+        }
       }
 
       &.aright {
         right: 0;
         background-position: -45px 0;
+        &.active{
+          background-position: -45px -30px;
+          cursor: default;
+        }
       }
 
-      &.agrayright {
-        background-position: -45px -30px;
-        cursor: default;
-      }
     }
   }
 
@@ -60,6 +63,7 @@
           height: 190px;
         }
       }
+
       & .em_case_ico {
         position: absolute;
         top: 0;
@@ -142,8 +146,7 @@
 
 @media (max-width: 768px) {
   .em_pro {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    em_scrollcontainer
     & .em_btndiv {
       top: 6px;
       left: -12px;
