@@ -413,16 +413,17 @@
                         <h2><img src="img/about_title.png"></h2>
                     </div>
                     <div class="em_aboutList col-md-4 col-xs-6">
-                        <ul class="nav nav-tabs justify-content-center">
-                            <li role="presentation" class="active"><a href="#tabOne" role="tab" data-toggle="tab">简介</a>
-                            </li>
-                            <li role="presentation"><a href="#tabTwo" role="tab" data-toggle="tab">动态</a></li>
-                            <li role="presentation"><a href="#tabThree" role="tab" data-toggle="tab">历程</a></li>
-                        </ul>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-intor-tab" data-toggle="tab" href="#nav-intor" role="tab" aria-controls="nav-intor" aria-selected="true">简介</a>
+                                <a class="nav-item nav-link" id="nav-move-tab" data-toggle="tab" href="#nav-move" role="tab" aria-controls="nav-move" aria-selected="false">动态</a>
+                                <a class="nav-item nav-link" id="nav-history-tab" data-toggle="tab" href="#nav-history" role="tab" aria-controls="nav-history" aria-selected="false">历程</a>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-                <div class="tab-content vertical-tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="tabOne">
+                <div class="tab-content vertical-tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-intor" role="tabpanel" aria-labelledby="nav-intor-tab">
                         <div class="em_about_div">
                             <div class="em_about_main row">
                                 <div class="em_about_left col-md-6">
@@ -446,7 +447,7 @@
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="tabTwo">
+                    <div class="tab-pane fade" id="nav-move" role="tabpanel" aria-labelledby="nav-move-tab">
                         <div class="em_news_list container">
                             <div class="row ">
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
@@ -484,7 +485,7 @@
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane " id="tabThree">
+                    <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
                         <div class="em_history container">
                             <div class="row">
                                 <div class="col-md-1 history_btn_left" id="btn_left"></div>

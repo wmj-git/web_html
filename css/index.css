@@ -304,9 +304,7 @@ a {
   padding-left: 143px; }
   .em_about .em_aboutList .nav-tabs {
     border: unset; }
-  .em_about .em_aboutList li {
-    list-style: none;
-    float: left;
+  .em_about .em_aboutList a.nav-item.nav-link {
     margin-left: 2px;
     background: #263551;
     color: #fff;
@@ -317,13 +315,12 @@ a {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
-    transition: all .3s; }
-    .em_about .em_aboutList li a {
-      padding: 2px 20px;
-      display: block; }
-    .em_about .em_aboutList li:hover, .em_about .em_aboutList li.active, .em_about .em_aboutList li:active {
-      background-color: #334871; }
-    .em_about .em_aboutList li a {
+    transition: all .3s;
+    border: none; }
+    .em_about .em_aboutList a.nav-item.nav-link:hover, .em_about .em_aboutList a.nav-item.nav-link.active, .em_about .em_aboutList a.nav-item.nav-link.active {
+      background-color: #334871;
+      border: none; }
+    .em_about .em_aboutList a.nav-item.nav-link a {
       color: #fff; }
 .em_about .em_about_div {
   position: relative;

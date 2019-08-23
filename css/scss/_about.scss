@@ -2,13 +2,12 @@
   & .em_aboutList {
     padding-top: 30px;
     padding-left: 143px;
+
     & .nav-tabs {
       border: unset;
     }
 
-    & li {
-      list-style: none;
-      float: left;
+    & a.nav-item.nav-link {
       margin-left: 2px;
       background: $em-aboutList-btn-color;
       color: $em-textColor-base;
@@ -20,14 +19,11 @@
       -moz-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s;
+      border: none;
 
-      & a {
-        padding: 2px 20px;
-        display: block;
-      }
-
-      &:hover, &.active, &:active {
+      &:hover, &.active, &.active {
         background-color: $em-abooutList-btn-color-highlight;
+        border: none;
       }
 
       & a {
@@ -179,6 +175,7 @@
   .em_about {
     padding-top: 20px;
     padding-bottom: 40px;
+
     & .em_aboutTitle {
       padding-left: 10px;
     }
@@ -226,8 +223,9 @@
       & .history_btn_left {
         margin-top: 50px;
       }
+
       & .history_btn_right {
-       display: none;
+        display: none;
       }
     }
   }
