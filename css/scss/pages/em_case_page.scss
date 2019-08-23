@@ -3,6 +3,15 @@
 .em_case_page {
   overflow: hidden;
 
+  & .case_img {
+    background: url("../../../img/em_case_page/case_bg.png") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    top: 42px;
+  }
+
   & .nav-tabs {
     & li {
       display: inline;
@@ -51,6 +60,12 @@
 
 @media(max-width: 768px) {
   .em_case_page {
+    & .case_img {
+      background: url("../../../img/em_case_page/case_bg_1024.png") no-repeat;
+      height: 126px;
+      background-size: cover;
+      top: 58px;
+    }
     & .tab-content {
       & .case_list {
         text-align: center;
