@@ -14,7 +14,7 @@ a {
     background-size: cover;
     height: 300px;
     position: relative;
-    top: 42px; }
+    top: 58px; }
   .em_news_page .em_news_container {
     margin: 0 auto;
     padding-top: 65px; }
@@ -152,8 +152,7 @@ a {
   .em_news_page .news_img {
     background: url("../../../img/em_news_page/news_bg_1024.png") no-repeat;
     height: 126px;
-    background-size: cover;
-    top: 58px; }
+    background-size: cover; }
   .em_news_page .em_news_container .news_right_list li.news_item {
     height: auto; }
     .em_news_page .em_news_container .news_right_list li.news_item .item_left img {

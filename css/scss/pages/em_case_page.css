@@ -6,7 +6,7 @@
     background-size: cover;
     height: 300px;
     position: relative;
-    top: 42px; }
+    top: 58px; }
   .em_case_page .nav-tabs li {
     display: inline; }
     .em_case_page .nav-tabs li a {
@@ -41,8 +41,7 @@
   .em_case_page .case_img {
     background: url("../../../img/em_case_page/case_bg_1024.png") no-repeat;
     height: 126px;
-    background-size: cover;
-    top: 58px; }
+    background-size: cover; }
   .em_case_page .tab-content .case_list {
     text-align: center; }
     .em_case_page .tab-content .case_list img {

@@ -6,7 +6,7 @@
     background-size: cover;
     height: 300px;
     position: relative;
-    top: 42px; }
+    top: 58px; }
   .em_about_page .about_introduce {
     padding-top: 65px; }
     .em_about_page .about_introduce .about_title {
@@ -82,8 +82,7 @@
   .em_about_page .about_img {
     background: url("../../../img/em_about_page/about_bg_1024.png") no-repeat;
     height: 126px;
-    background-size: cover;
-    top: 58px; }
+    background-size: cover; }
   .em_about_page .about_introduce .about_title h4 {
     font-size: 20px; }
   .em_about_page .about_introduce .about_dec p {

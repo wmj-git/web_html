@@ -14,10 +14,17 @@ a {
 
 .em_business_page {
   overflow: hidden;
-
+  & .business_img {
+    background: url("../../../img/em_business_page/business_bg.png") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    top: 58px;
+  }
   & .em_business_container {
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 65px;
 
     & .business_left_title {
       & .business_title_top {
@@ -216,6 +223,11 @@ a {
 
 @media (max-width: 768px) {
   .em_business_page {
+    & .business_img {
+      background: url("../../../img/em_business_page/business_page_1024.png") no-repeat;
+      height: 126px;
+      background-size: cover;
+    }
     & .em_business_container {
       & .business_right_list {
         & li.business_item {
