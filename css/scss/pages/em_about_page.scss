@@ -2,7 +2,19 @@
 
 .em_about_page {
   overflow: hidden;
+
+  & .about_img {
+    background: url("../../../img/em_about_page/about_bg.png") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    top: 42px;
+  }
+
   & .about_introduce {
+    padding-top: 65px;
+
     & .about_title {
       height: 100px;
 
@@ -63,7 +75,8 @@
         font-size: 15px;
         padding: 1px;
       }
-      & img{
+
+      & img {
         max-width: 100%;
         height: auto;
         overflow: hidden;
@@ -93,7 +106,8 @@
     & .team_dec {
       margin: 0 auto;
       padding: 20px;
-      & p{
+
+      & p {
         text-indent: 34px;
       }
     }
@@ -112,6 +126,12 @@
 
 @media(max-width: 768px) {
   .em_about_page {
+    & .about_img {
+      background: url("../../../img/em_about_page/about_bg_1024.png") no-repeat;
+      height: 126px;
+      background-size: cover;
+      top: 58px;
+    }
     & .about_introduce {
       & .about_title {
         h4 {
@@ -139,7 +159,8 @@
           padding: 20px;
           font-size: 14px;
         }
-        & img{
+
+        & img {
           width: 100%;
           height: auto;
           padding: 0 30px;

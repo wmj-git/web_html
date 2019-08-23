@@ -124,7 +124,12 @@
 
     & .history_main {
       height: 300px;
+      width: auto;
       overflow: hidden;
+      & .scroll{
+        position: absolute;
+        left: 0;
+      }
     }
 
     & .em_history_list {
@@ -141,6 +146,7 @@
       }
 
       & .history_icon {
+        display: block;
         margin: 5px auto 0 auto;
         height: 11px;
         background: url(../img/em_about/history_ico.png) no-repeat center bottom;
@@ -181,16 +187,7 @@
     }
 
     & .em_aboutList {
-      margin-left: 20px;
-
-      & li {
-        width: 60px;
-
-        & a {
-          padding: 0;
-
-        }
-      }
+      margin-left: -60px;
     }
 
     & .em_about_div {

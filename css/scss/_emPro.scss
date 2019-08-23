@@ -146,10 +146,9 @@
 
 @media (max-width: 768px) {
   .em_pro {
-    em_scrollcontainer
     & .em_btndiv {
-      top: 6px;
-      left: -12px;
+      top: 0;
+      right: 20px;
     }
 
     & .em_scrollcontainer {

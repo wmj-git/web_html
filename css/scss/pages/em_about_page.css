@@ -1,26 +1,35 @@
 .em_about_page {
   overflow: hidden; }
-  .em_about_page .about_introduce .about_title {
-    height: 100px; }
-    .em_about_page .about_introduce .about_title h4 {
-      text-align: center;
-      line-height: 100px;
-      font-size: 28px;
-      color: #4d4d4d; }
-  .em_about_page .about_introduce .about_dec {
-    margin: 0 auto; }
-    .em_about_page .about_introduce .about_dec p {
-      padding: 0 20px;
-      line-height: 30px;
-      text-align: justify;
-      /*Text alignment*/
-      text-justify: inter-ideograph;
-      /*IE*/ }
-      .em_about_page .about_introduce .about_dec p.special {
-        text-indent: 34px; }
-  .em_about_page .about_introduce .about_other {
-    margin: 0 auto;
-    text-align: center; }
+  .em_about_page .about_img {
+    background: url("../../../img/em_about_page/about_bg.png") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    top: 42px; }
+  .em_about_page .about_introduce {
+    padding-top: 65px; }
+    .em_about_page .about_introduce .about_title {
+      height: 100px; }
+      .em_about_page .about_introduce .about_title h4 {
+        text-align: center;
+        line-height: 100px;
+        font-size: 28px;
+        color: #4d4d4d; }
+    .em_about_page .about_introduce .about_dec {
+      margin: 0 auto; }
+      .em_about_page .about_introduce .about_dec p {
+        padding: 0 20px;
+        line-height: 30px;
+        text-align: justify;
+        /*Text alignment*/
+        text-justify: inter-ideograph;
+        /*IE*/ }
+        .em_about_page .about_introduce .about_dec p.special {
+          text-indent: 34px; }
+    .em_about_page .about_introduce .about_other {
+      margin: 0 auto;
+      text-align: center; }
   .em_about_page .about_advantages {
     background-color: #f2f2f2;
     padding-bottom: 40px; }
@@ -70,6 +79,11 @@
         margin: 0 10px 10px 0; }
 
 @media (max-width: 768px) {
+  .em_about_page .about_img {
+    background: url("../../../img/em_about_page/about_bg_1024.png") no-repeat;
+    height: 126px;
+    background-size: cover;
+    top: 58px; }
   .em_about_page .about_introduce .about_title h4 {
     font-size: 20px; }
   .em_about_page .about_introduce .about_dec p {

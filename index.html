@@ -415,15 +415,19 @@
                     <div class="em_aboutList col-md-4 col-xs-6">
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-intor-tab" data-toggle="tab" href="#nav-intor" role="tab" aria-controls="nav-intor" aria-selected="true">简介</a>
-                                <a class="nav-item nav-link" id="nav-move-tab" data-toggle="tab" href="#nav-move" role="tab" aria-controls="nav-move" aria-selected="false">动态</a>
-                                <a class="nav-item nav-link" id="nav-history-tab" data-toggle="tab" href="#nav-history" role="tab" aria-controls="nav-history" aria-selected="false">历程</a>
+                                <a class="nav-item nav-link active" id="nav-intor-tab" data-toggle="tab"
+                                   href="#nav-intor" role="tab" aria-controls="nav-intor" aria-selected="true">简介</a>
+                                <a class="nav-item nav-link" id="nav-move-tab" data-toggle="tab" href="#nav-move"
+                                   role="tab" aria-controls="nav-move" aria-selected="false">动态</a>
+                                <a class="nav-item nav-link" id="nav-history-tab" data-toggle="tab" href="#nav-history"
+                                   role="tab" aria-controls="nav-history" aria-selected="false">历程</a>
                             </div>
                         </nav>
                     </div>
                 </div>
                 <div class="tab-content vertical-tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-intor" role="tabpanel" aria-labelledby="nav-intor-tab">
+                    <div class="tab-pane fade show active" id="nav-intor" role="tabpanel"
+                         aria-labelledby="nav-intor-tab">
                         <div class="em_about_div">
                             <div class="em_about_main row">
                                 <div class="em_about_left col-md-6">
@@ -486,12 +490,12 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
-                        <div class="em_history container">
+                        <div class="em_history container-fluid">
                             <div class="row">
                                 <div class="col-md-1 history_btn_left" id="btn_left"></div>
-                                <div class="col-md-10 history_main">
-                                    <div class="row">
-                                        <div class="col-md-4 em_history_list">
+                                <div class="col-md-10 history_main" id="history_main">
+                                    <div class="row scroll" id="scroll">
+                                        <div class="col-md-3 em_history_list">
                                             <h4>2016年5月</h4>
                                             <div class="history_icon"></div>
                                             <dl>
@@ -499,7 +503,7 @@
                                                 <dd>2009年，三个热爱设计工作的年轻人成立了周末网页设计工作室...</dd>
                                             </dl>
                                         </div>
-                                        <div class="col-md-4 em_history_list">
+                                        <div class="col-md-3 em_history_list">
                                             <h4>2016年10月</h4>
                                             <div class="history_icon"></div>
                                             <dl>
@@ -507,7 +511,7 @@
                                                 <dd>2009年，三个热爱设计工作的年轻人成立了周末网页设计工作室...</dd>
                                             </dl>
                                         </div>
-                                        <div class="col-md-4 em_history_list">
+                                        <div class="col-md-3 em_history_list">
                                             <h4>2016年5月</h4>
                                             <div class="history_icon"></div>
                                             <dl>
@@ -515,7 +519,23 @@
                                                 <dd>2009年，三个热爱设计工作的年轻人成立了周末网页设计工作室...</dd>
                                             </dl>
                                         </div>
-                                        <div class="col-md-4 em_history_list">
+                                        <div class="col-md-3 em_history_list">
+                                            <h4>2016年5月</h4>
+                                            <div class="history_icon"></div>
+                                            <dl>
+                                                <dt><img src="img/em_about/history_img4.jpg"></dt>
+                                                <dd>2009年，三个热爱设计工作的年轻人成立了周末网页设计工作室...</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-3 em_history_list">
+                                            <h4>2016年5月</h4>
+                                            <div class="history_icon"></div>
+                                            <dl>
+                                                <dt><img src="img/em_about/history_img4.jpg"></dt>
+                                                <dd>2009年，三个热爱设计工作的年轻人成立了周末网页设计工作室...</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-3 em_history_list">
                                             <h4>2016年5月</h4>
                                             <div class="history_icon"></div>
                                             <dl>
@@ -721,13 +741,13 @@
             navigation: true
         });
     });
-    $(window).resize(function () {
+    /*$(window).resize(function () {
         autoScrolling();
     });
 
     function autoScrolling() {
         var $win = $(window).width();
-        /*屏幕可见区域小于1024时，关闭全屏滚动，使用自带的滚动条*/
+        /!*屏幕可见区域小于1024时，关闭全屏滚动，使用自带的滚动条*!/
         if ($win < 1024) {
             $.fn.fullpage.setAutoScrolling(false);
         } else {
@@ -735,7 +755,7 @@
         }
     }
 
-    autoScrolling();
+    autoScrolling();*/
 
 </script>
 
@@ -747,6 +767,60 @@
         }
     });
 
+</script>
+
+<script>
+    $(document).ready(function () {
+        var box0 = $("#history_main"), v0 = 1.5; //这里添加滚动的对象和其速率
+        Rin(box0, v0);
+
+        function Rin($Box, v) {//$Box移动的对象，v对象移动的速率
+            var $Box_ul = $Box.find("#scroll"),
+                $Box_li = $Box_ul.find(".em_history_list"),
+                $Box_li_span = $Box_li.find("dl"),
+                left = 0,
+                s = 0,
+                timer;//定时器
+            console.log($Box_ul);
+            console.log($Box_li);
+            console.log($Box_li_span);
+            $Box_li.each(function (index) {
+                $($Box_li_span[index]).width($(this).width());//hover
+
+                s += $(this).outerWidth(true); //即要滚动的长度
+                console.log("s:"+  $($Box_li_span[index]).outerWidth(true));
+            })
+
+            window.requestAnimationFrame = window.requestAnimationFrame || function (Tmove) {
+                return setTimeout(Tmove, 1000)
+            };
+            window.cancelAnimationFrame = window.cancelAnimationFrame || clearTimeout;
+
+            if (s >= $Box.width()) {//如果滚动长度超出Box长度即开始滚动，没有的话就不执行滚动
+               /* $Box_li.clone(true).appendTo($Box_ul);*/
+                Tmove();
+
+                function Tmove() {
+                    //运动是移动left  从0到-s;（个人习惯往左滚）
+                    left -= v;
+                    if (left <= -s) {
+                        left = 0;
+                        $Box_ul.css("left", left)
+                    } else {
+                        $Box_li.css("left", left)
+                    }
+                    timer = requestAnimationFrame(Tmove);
+                }
+
+                $Box_li.hover(function () {
+                    cancelAnimationFrame(timer)
+                }, function () {
+                    Tmove()
+                })
+            }
+
+        }
+    })
 </script>
 </body>
 </html>
