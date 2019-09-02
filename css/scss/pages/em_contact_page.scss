@@ -11,7 +11,14 @@ a {
 
 .em_contact_page {
   overflow: hidden;
-
+   & .contact_img {
+    background: url("../../../img/em_contact_page/contact_img.png") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    top: 58px;
+  }
   & .contact_type {
     margin: 0 auto;
 
@@ -19,6 +26,8 @@ a {
       height: 420px;
       border-left: 1px solid darken($em-borderColor-base, 10%);
       text-align: center;
+      margin-top: 60px;
+      overflow: hidden;
       &:nth-child(3) {
         border-right: 1px solid darken($em-borderColor-base, 10%);
       }
@@ -104,6 +113,11 @@ a {
 
 @media(max-width: 768px) {
   .em_contact_page {
+    & .contact_img {
+      background: url("../../../img/em_contact_page/contact_img_1024.png") no-repeat;
+      height: 126px;
+      background-size: cover;
+    }
     & .contact_type {
       padding-bottom: 40px;
       & .contact_type_list {
