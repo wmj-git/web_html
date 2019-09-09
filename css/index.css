@@ -150,7 +150,8 @@ a {
     .em_case .row > div .em_caseList_main {
       margin-top: unset; } }
 .fullpage {
-  top: 60px; }
+  top: 60px;
+  font-family: San Francisco; }
 
 .section.fp-section.fp-table.pageOne {
   height: 600px;

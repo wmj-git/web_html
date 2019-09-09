@@ -3977,7 +3977,7 @@
     //for IE 9 ?
     function preventDefault(event){
         if(event.preventDefault){
-            event.preventDefault();
+           /* event.preventDefault(); 阻止默认事件失败*/
         }
         else{
             event.returnValue = false;

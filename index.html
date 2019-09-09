@@ -740,22 +740,23 @@
             /*  anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],*/
             navigation: true
         });
-    });
-    /*$(window).resize(function () {
         autoScrolling();
     });
-
+    $(window).resize(function () {
+        autoScrolling();
+    });
     function autoScrolling() {
         var $win = $(window).width();
-        /!*屏幕可见区域小于1024时，关闭全屏滚动，使用自带的滚动条*!/
+        /*屏幕可见区域小于1024时，关闭全屏滚动，使用自带的滚动条*/
         if ($win < 1024) {
             $.fn.fullpage.setAutoScrolling(false);
+            alert(12);
         } else {
             $.fn.fullpage.setAutoScrolling(true);
         }
     }
 
-    autoScrolling();*/
+
 
 </script>
 
