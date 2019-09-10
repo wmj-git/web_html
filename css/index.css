@@ -396,6 +396,8 @@ a {
     .em_about .em_history .history_main .scroll {
       position: absolute;
       left: 0; }
+      .em_about .em_history .history_main .scroll .row.second {
+        flex-wrap: nowrap; }
   .em_about .em_history .em_history_list {
     float: left; }
     .em_about .em_history .em_history_list h4 {
@@ -443,6 +445,9 @@ a {
     .em_about .em_news_list .news_more {
       margin-top: 0;
       margin-bottom: 30px; }
+    .em_about .em_history .history_main {
+      width: 270px;
+      margin: 0 auto; }
     .em_about .em_history .history_btn_left {
       margin-top: 50px; }
     .em_about .em_history .history_btn_right {
