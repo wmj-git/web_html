@@ -132,7 +132,7 @@ a {
 @media (max-width: 768px) {
   .em_case {
     height: auto;
-    padding: 20px 0; }
+    padding-bottom: 10px; }
     .em_case .row .em_ljzx {
       width: 110px;
       height: 35px; }
@@ -295,11 +295,14 @@ a {
       height: 0; }
 
 @media (max-width: 768px) {
-  .em_pro .em_btndiv {
-    top: 0;
-    right: 20px; }
-  .em_pro .em_scrollcontainer {
-    left: 50px; } }
+  .em_pro {
+    padding-top: 20px;
+    padding-bottom: 40px; }
+    .em_pro .em_btndiv {
+      top: 0;
+      right: 20px; }
+    .em_pro .em_scrollcontainer {
+      left: 50px; } }
 .em_about .em_aboutList {
   padding-top: 30px;
   padding-left: 143px; }
@@ -342,7 +345,7 @@ a {
   .em_about .em_news_list span {
     border: 1px solid #fff;
     padding: 5px 17px;
-    width: 110px;
+    width: 120px;
     display: inline-block;
     height: 28px;
     line-height: 15px;
