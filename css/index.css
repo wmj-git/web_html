@@ -399,7 +399,11 @@ a {
       .em_about .em_history .history_main .scroll .row.second {
         flex-wrap: nowrap; }
   .em_about .em_history .em_history_list {
-    float: left; }
+    position: relative;
+    float: left;
+    width: 270px;
+    margin: auto 5px;
+    left: 0; }
     .em_about .em_history .em_history_list h4 {
       margin: 0 auto;
       color: #fff;
