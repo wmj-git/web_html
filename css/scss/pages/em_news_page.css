@@ -129,6 +129,10 @@ a {
             font-weight: 900; }
             .em_news_page .em_news_container .news_right_list li.news_item .item_right .item_title a:hover {
               color: black; }
+          .em_news_page .em_news_container .news_right_list li.news_item .item_right .item_title span.news_date {
+            color: #666666;
+            float: right;
+            font-size: 15px; }
         .em_news_page .em_news_container .news_right_list li.news_item .item_right .item_con {
           font-size: 12px;
           padding-top: 8px; }

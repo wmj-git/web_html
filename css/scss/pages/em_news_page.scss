@@ -181,7 +181,6 @@ a {
             text-overflow: ellipsis;
             -o-text-overflow: ellipsis;
             overflow: hidden;
-
             & a {
               color: black;
               font-weight: 900;
@@ -189,6 +188,11 @@ a {
               &:hover {
                 color: darken($em-textColor-base, 100%);
               }
+            }
+            & span.news_date{
+              color: darken($em-textColor-base, 60%);
+              float: right;
+              font-size: 15px;
             }
           }
 
