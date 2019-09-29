@@ -1,19 +1,3 @@
-/*$(function(){
-    //此demo通过Ajax加载分页元素
-        var num_entries = $("#news_industry .news_item").length;
-        console.log(num_entries);
-        // 创建分页
-        $("#Pagination").pagination(num_entries, {
-            num_edge_entries: 1, //边缘页数
-            num_display_entries: 4, //主体页数
-            callback: function (page_index) {
-                Init(page_index);
-            },
-            items_per_page: 5, //每页显示1项
-            prev_text: "前一页",
-            next_text: "后一页",
-    });
-});*/
 $("#Pagination").zPager({
     totalData: 80, //数据总条数
     pageData: 10, //每页数据条数
