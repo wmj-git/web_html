@@ -1,9 +1,7 @@
-// 初始化加载
-
-var pageMap = {}
+var pageMap = {};
 var nowTypeId = 2;
 var nowIndex = 0;
-var pageSize = 10;
+var pageSize = 5;
 
 init()
 
@@ -28,7 +26,7 @@ function renderHtml(res) {
                                 <div class="col-md-8 item_right">
                                     <div class="item_title">
                                         <span><a href="details.html?id=${item.id}">${item.newsTittle}</a></span>
-                                        <span class="news_date">${item.createDate}</span>
+                                        <span class="news_date">${item.newsTime}</span>
                                     </div>
                                     <div class="item_con"><span>${item.newsConclusion}</span></div>
                                     <div class="item_more">
@@ -48,9 +46,9 @@ function readerNavigation(res) {
     var str = '';
     for (var i = 0; i < navData.length; ++i) {
         if (navData[i] === data.pageNum) {
-            str += '<li class="page-item active"><a class="page-link am-link" href="#">' + navData[i] + '</a></li>'
+            str += '<li class="page-item pages active"><a class="page-link am-link" href="#">' + navData[i] + '</a></li>'
         } else {
-            str += '<li class="page-item"><a class="page-link am-link" href="#">' + navData[i] + '</a></li>'
+            str += '<li class="page-item pages"><a class="page-link am-link" href="#">' + navData[i] + '</a></li>'
         }
     }
     var firstStr = $("#firstLi").get(0).outerHTML;
