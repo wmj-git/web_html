@@ -161,9 +161,11 @@ a {
 
         & .item_left {
           img {
-            width: 260px;
-            height: 160px;
-            margin-left: -15px;
+            max-width: 160px;
+            max-height: 160px;
+            width: 100%;
+            height: 100%;
+            margin-left: 25px;
           }
         }
 
@@ -186,6 +188,11 @@ a {
                 color: darken($em-textColor-base, 100%);
               }
             }
+            & span.business_date {
+              color: darken($em-textColor-base, 60%);
+              float: right;
+              font-size: 15px;
+            }
           }
 
           & .item_con {
@@ -206,21 +213,65 @@ a {
             line-height: 20px;
             padding-top: 6px;
             width: 595px;
-
-            & span {
-              color: #f00;
-            }
-
             & a {
-              color: darken($em-textColor-base, 100%);
+              color: #00c;
             }
           }
         }
       }
     }
   }
-}
+  .page-item {
+    border: none;
+  }
 
+  .page-item {
+    &:first-child {
+      height: 40px;
+      margin-right: 2px;
+
+      & .page-link {
+        height: 40px;
+      }
+    }
+
+    &:last-child {
+      height: 40px;
+      margin-left: 2px;
+
+      & .page-link {
+        height: 40px;
+      }
+    }
+  }
+
+  .pages {
+    width: 45px;
+    height: 40px;
+    border: 1px solid #EBEBEB;
+    color: #8a8a8a;
+    display: inline-block;
+    line-height: 40px;
+    float: left;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0 2px;
+    border-radius: 6px;
+
+    .page-link {
+      width: 45px;
+      height: 40px;
+      border-radius: 6px;
+      text-align: center;
+      line-height: 1.5rem;
+
+    }
+  }
+
+}
+a.btn.disabled, fieldset:disabled a.btn{
+  color: #bfbfbf;
+}
 @media (max-width: 768px) {
   .em_business_page {
     & .business_img {

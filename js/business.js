@@ -1,15 +1,16 @@
 var pageMap = {};
-var nowTypeId = 2;
+var nowTypeId = 5;
 var nowIndex = 0;
-var pageSize = 5;
+var pageSize = 2;
 
-init()
+init();
 
 function init() {
     click();
     pageMap["categoryId_" + nowTypeId] = 1;
+    console.log(pageMap);
     nowIndex = 0;
-    loadData(renderHtml)
+    loadData(renderHtml);
 }
 
 // 渲染页面
@@ -19,24 +20,24 @@ function renderHtml(res) {
     var item;
     for (var i = 0; i < data.list.length; ++i) {
         item = data.list[i];
-        htmlStr += `<li class="news_item row ">
-                                <div class="col-md-4 item_left">
-                                    <img src="${item.listFiles}">
-                                </div>
-                                <div class="col-md-8 item_right">
-                                    <div class="item_title">
-                                        <span><a href="details.html?id=${item.id}">${item.newsTittle}</a></span>
-                                        <span class="news_date">${item.newsTime}</span>
+        htmlStr += `<li class="business_item row ">
+                                    <div class="col-md-4 item_left">
+                                        <img src="${item.listFiles}">
                                     </div>
-                                    <div class="item_con"><span>${item.newsConclusion}</span></div>
-                                    <div class="item_more">
-                                        <a href="details.html?id=${item.id}">查看更多>></a>
+                                    <div class="col-md-8 item_right">
+                                        <div class="item_title">
+                                            <span><a href="details_business.html?id=${item.id}">${item.caseName}</a></span>
+                                        </div>
+                                        <div class="item_con"><span> 
+                                         ${item.caseDescribe}</span></div>
+                                        <div class="item_more">
+                                            <a href="details_business.html?id=${item.id}">查看更多>></a>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>`
+                                </li>`
     }
-    $("#v-pills-tabContent .tab-pane").eq(nowIndex).find(".am-content").html(htmlStr)
-    readerNavigation(res)
+    $("#v-pills-tabContent .tab-pane").eq(nowIndex).find(".am-content").html(htmlStr);
+    readerNavigation(res);
 }
 
 // 导航渲染
@@ -59,7 +60,7 @@ function readerNavigation(res) {
 }
 
 /**
- * 分页添加事件
+ * 分页按钮点击事件
  */
 function navAction(res) {
     var data = res.data;
@@ -67,18 +68,18 @@ function navAction(res) {
     var privious = $("#previous");
     var next = $("#next");
     if (!data.hasPreviousPage) {
-        privious.addClass('disabled')
+        privious.addClass('disabled');
     } else {
-        privious.removeClass('disabled')
+        privious.removeClass('disabled');
         privious.click(function () {
             pageMap['categoryId_' + nowTypeId] = pageNum - 1;
-            loadData(renderHtml)
+            loadData(renderHtml);
         })
     }
     if (!data.hasNextPage) {
-        next.addClass('disabled')
+        next.addClass('disabled');
     } else {
-        next.removeClass('disabled')
+        next.removeClass('disabled');
         next.click(function () {
             pageMap['categoryId_' + nowTypeId] = pageNum + 1;
             loadData(renderHtml)
@@ -103,8 +104,9 @@ function click() {
         if (!pageMap['categoryId_' + dataid]) pageMap['categoryId_' + dataid] = 1;
         console.log(pageMap);
         nowTypeId = dataid;
-        var str =$("#v-pills-tabContent .tab-pane").eq(nowIndex).find(".am-content").html();
-        loadData(renderHtml)
+        var str = $("#v-pills-tabContent .tab-pane").eq(nowIndex).find(".am-content").html();
+        console.log(str);
+        loadData(renderHtml);
     })
 }
 
@@ -112,8 +114,9 @@ function click() {
 * 限制分页显示数目
 *
 * */
+
 // 加载分页数据
 function loadData(fnSuccess) {
     var pageNum = pageMap["categoryId_" + nowTypeId];
-    $.get("http://192.168.20.18:1800/api/v1/company/news/queryAllByPage?categoryTypeId=" + nowTypeId + "&pageSize=" + pageSize + "&pageNum=" + pageNum, fnSuccess)
+    $.get("http://192.168.20.18:1800/api/v1/company/documentation/queryAllByPage?categoryTypeId=" + nowTypeId + "&pageSize=" + pageSize + "&pageNum=" + pageNum, fnSuccess)
 }
