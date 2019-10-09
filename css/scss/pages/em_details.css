@@ -27,7 +27,8 @@
       text-align: center;
       padding-top: 60px;
       font-size: 18px;
-      color: #4d4d4d; }
+      color: #4d4d4d;
+      font-weight: 600; }
   .em_details .em_details_content .details_pic {
     padding: 10px 20px; }
     .em_details .em_details_content .details_pic .details_img {
@@ -42,6 +43,11 @@
       font-size: 16px;
       line-height: 30px;
       color: #666666; }
+
+.em_footer_side {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
 
 @media (max-width: 768px) {
   .em_details .em_details_content .details_img {

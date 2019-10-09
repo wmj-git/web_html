@@ -101,15 +101,18 @@ function click() {
         var dataid = $(this).attr('data-id');
         nowIndex = $(this).index();
         if (!pageMap['categoryId_' + dataid]) pageMap['categoryId_' + dataid] = 1;
-        console.log(pageMap)
+        console.log(pageMap);
         nowTypeId = dataid;
         var str =$("#v-pills-tabContent .tab-pane").eq(nowIndex).find(".am-content").html();
-        console.log(str)
+        console.log(str);
         loadData(renderHtml)
     })
 }
 
-
+/*
+* 限制分页显示数目
+*
+* */
 // 加载分页数据
 function loadData(fnSuccess) {
     var pageNum = pageMap["categoryId_" + nowTypeId];

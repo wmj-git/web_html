@@ -177,6 +177,7 @@ a {
             height: 44px;
             line-height: 44px;
             font-size: 18px;
+
             & a {
               max-width: 250px;
               display: inline-block;
@@ -271,10 +272,13 @@ a {
       border-radius: 6px;
       text-align: center;
       line-height: 1.5rem;
+
     }
   }
 }
-
+a.btn.disabled, fieldset:disabled a.btn{
+  color: #bfbfbf;
+}
 .em_pagination {
   margin: 0 auto;
   width: 50px;
