@@ -136,8 +136,11 @@ a {
             float: right;
             font-size: 15px; }
         .em_business_page .em_business_container .business_right_list li.business_item .item_right .item_con {
-          font-size: 12px;
-          padding-top: 8px; }
+          font-size: 14px;
+          padding-top: 8px;
+          text-overflow: ellipsis;
+          -webkit-text-overflow: ellipsis;
+          overflow: hidden; }
           .em_business_page .em_business_container .business_right_list li.business_item .item_right .item_con span {
             line-height: 24px;
             height: 72px;
@@ -193,7 +196,7 @@ a.btn.disabled, fieldset:disabled a.btn {
   .em_business_page .em_business_container .business_right_list li.business_item {
     height: auto; }
     .em_business_page .em_business_container .business_right_list li.business_item .item_left img {
-      margin-left: 12px; }
+      margin-left: 25%; }
     .em_business_page .em_business_container .business_right_list li.business_item .item_right .item_title {
       font-size: 15px;
       margin-left: -15px; }

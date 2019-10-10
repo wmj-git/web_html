@@ -206,6 +206,9 @@ a {
             font-size: 14px;
             padding-top: 8px;
             text-indent: 28px;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            overflow: hidden;
 
             & span {
               line-height: 24px;
@@ -278,9 +281,11 @@ a {
     }
   }
 }
-a.btn.disabled, fieldset:disabled a.btn{
+
+a.btn.disabled, fieldset:disabled a.btn {
   color: #bfbfbf;
 }
+
 .em_pagination {
   margin: 0 auto;
   width: 50px;
@@ -322,8 +327,12 @@ a.btn.disabled, fieldset:disabled a.btn{
               font-size: 15px;
               margin-left: -15px;
 
-              & span {
-                width: 350px;
+              & a {
+                max-width: 100px;
+              }
+
+              & span.news_date {
+                font-size: 12px;
               }
             }
           }

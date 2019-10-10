@@ -2,7 +2,7 @@
 var pageMap = {};
 var nowTypeId = 5;
 var nowIndex = 0;
-var pageSize = 2;
+var pageSize = 5;
 
 init();
 
@@ -37,7 +37,7 @@ function renderHtml(res) {
                                         <div class="item_con"><span> 
                                          ${item.caseDescribe}</span></div>
                                         <div class="item_more">
-                                            <a href="details_business.html?id=${item.id}">查看更多>></a>
+                                            <a href="details_business.html?id=${item.id}">查看详情>></a>
                                         </div>
                                     </div>
                                 </li>`

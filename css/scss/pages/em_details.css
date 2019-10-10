@@ -1,3 +1,13 @@
+pre {
+  white-space: pre-wrap;
+  /* css3.0 */
+  white-space: -moz-pre-wrap;
+  /* Firefox */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */ }
+
 .em_details {
   overflow: hidden; }
   .em_details .details_top {
@@ -44,13 +54,11 @@
       line-height: 30px;
       color: #666666; }
 
-.em_footer_side {
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
-
 @media (max-width: 768px) {
-  .em_details .em_details_content .details_img {
-    overflow: hidden; } }
+  .em_details .em_details_content .details_dec img {
+    width: 345px;
+    max-width: 100%; }
+  .em_details .em_details_content .details_dec p {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=em_details.css.map */

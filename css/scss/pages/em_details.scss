@@ -1,5 +1,12 @@
 @import "../../scss/variable";
 
+pre {
+  white-space: pre-wrap; /* css3.0 */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
 .em_details {
   overflow: hidden;
 
@@ -68,19 +75,19 @@
     }
   }
 }
-.em_footer_side{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 
 @media (max-width: 768px) {
   .em_details {
     & .em_details_content {
-      & .details_img {
-        overflow: hidden;
+      & .details_dec {
+        img{
+          width: 345px;
+          max-width: 100%;
+        }
+        p{
+          font-size: 14px;
+        }
       }
     }
   }
-
 }

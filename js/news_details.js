@@ -9,6 +9,10 @@ $.get("http://192.168.20.18:1800/api/v1/company/news/queryAll?id=" + id, functio
         $("#new_title").html(data.newsTittle);
         $("#news_image").attr("src",data.listFiles);
         $("#news_content").html(data.newsContent);
+        if(data.listFiles ==""){
+           document.getElementById("details_pic").style.display="none";
+            console.log("，没有图片");
+        }
     } else {
         console.log(res.message)
     }

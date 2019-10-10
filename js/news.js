@@ -34,7 +34,7 @@ function renderHtml(res) {
                                     </div>
                                     <div class="item_con"><span>${item.newsConclusion}</span></div>
                                     <div class="item_more">
-                                        <a href="details.html?id=${item.id}">查看更多>></a>
+                                        <a href="details.html?id=${item.id}">查看详情>></a>
                                     </div>
                                 </div>
                             </li>`

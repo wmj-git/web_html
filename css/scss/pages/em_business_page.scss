@@ -196,8 +196,11 @@ a {
           }
 
           & .item_con {
-            font-size: 12px;
+            font-size: 14px;
             padding-top: 8px;
+            text-overflow: ellipsis;
+            -webkit-text-overflow: ellipsis;
+            overflow: hidden;
 
             & span {
               line-height: 24px;
@@ -286,7 +289,7 @@ a.btn.disabled, fieldset:disabled a.btn{
 
           & .item_left {
             img {
-              margin-left: 12px;
+              margin-left: 25%;
             }
           }
 
