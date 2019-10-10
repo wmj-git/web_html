@@ -3,13 +3,13 @@ var nowTypeId = 2;
 var nowIndex = 0;
 var pageSize = 5;
 
-init()
+init();
 
 function init() {
     click();
     pageMap["categoryId_" + nowTypeId] = 1;
     nowIndex = 0;
-    loadData(renderHtml)
+    loadData(renderHtml);
 }
 
 // 渲染页面
@@ -19,9 +19,13 @@ function renderHtml(res) {
     var item;
     for (var i = 0; i < data.list.length; ++i) {
         item = data.list[i];
+        if(item.listFiles == ""){
+            var imgUrl = item.listFiles = "img/em_news_page/default.png";
+            $("#image").attr("src",imgUrl);
+        }
         htmlStr += `<li class="news_item row ">
                                 <div class="col-md-4 item_left">
-                                    <img src="${item.listFiles}">
+                                    <img id ="image" src="${item.listFiles}">
                                 </div>
                                 <div class="col-md-8 item_right">
                                     <div class="item_title">
@@ -35,8 +39,8 @@ function renderHtml(res) {
                                 </div>
                             </li>`
     }
-    $("#v-pills-tabContent .tab-pane").eq(nowIndex).find(".am-content").html(htmlStr)
-    readerNavigation(res)
+    $("#v-pills-tabContent .tab-pane").eq(nowIndex).find(".am-content").html(htmlStr);
+    readerNavigation(res);
 }
 
 // 导航渲染
@@ -76,12 +80,12 @@ function navAction(res) {
         })
     }
     if (!data.hasNextPage) {
-        next.addClass('disabled')
+        next.addClass('disabled');
     } else {
-        next.removeClass('disabled')
+        next.removeClass('disabled');
         next.click(function () {
             pageMap['categoryId_' + nowTypeId] = pageNum + 1;
-            loadData(renderHtml)
+            loadData(renderHtml);
         })
     }
 
@@ -104,7 +108,7 @@ function click() {
         console.log(pageMap);
         nowTypeId = dataid;
         var str =$("#v-pills-tabContent .tab-pane").eq(nowIndex).find(".am-content").html();
-        loadData(renderHtml)
+        loadData(renderHtml);
     })
 }
 
@@ -116,4 +120,34 @@ function click() {
 function loadData(fnSuccess) {
     var pageNum = pageMap["categoryId_" + nowTypeId];
     $.get("http://192.168.20.18:1800/api/v1/company/news/queryAllByPage?categoryTypeId=" + nowTypeId + "&pageSize=" + pageSize + "&pageNum=" + pageNum, fnSuccess)
+}
+
+
+/*判断图片是否存在*/
+var CheckImgExists = function CheckImg(imgurl) {
+    return new Promise(function(resolve, reject) {
+        var ImgObj = new Image();
+        ImgObj.onload=function(){
+             console.log(ImgObj.width+"==",ImgObj.height+"==");
+            resolve("load image success");
+        }
+        ImgObj.onerror=function(){
+             console.log('error');
+            reject('Could not load image at ' + imgurl);
+        }
+        ImgObj.src = imgurl;
+    });
+}
+
+/*图片不存在则使用默认图片*/
+function setImage(imgurl){
+    //图片存在执行第一个函数，否则执行第二个函数
+    CheckImgExists(imgurl).then(function(json) {
+        $("#image").attr("src",imgurl);
+        console.log(json);
+    }, function(error) {
+        $("#image").attr("src",'');
+        console.error(error);
+    });
+
 }

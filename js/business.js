@@ -1,3 +1,4 @@
+
 var pageMap = {};
 var nowTypeId = 5;
 var nowIndex = 0;
@@ -11,6 +12,7 @@ function init() {
     console.log(pageMap);
     nowIndex = 0;
     loadData(renderHtml);
+
 }
 
 // 渲染页面
@@ -20,9 +22,13 @@ function renderHtml(res) {
     var item;
     for (var i = 0; i < data.list.length; ++i) {
         item = data.list[i];
+        if(item.listFiles == ""){
+            var imgUrl = item.listFiles = "img/em_business_page/default.png";
+            $("#image").attr("src",imgUrl);
+        }
         htmlStr += `<li class="business_item row ">
                                     <div class="col-md-4 item_left">
-                                        <img src="${item.listFiles}">
+                                        <img id="image" src="${item.listFiles}">
                                     </div>
                                     <div class="col-md-8 item_right">
                                         <div class="item_title">
@@ -36,6 +42,7 @@ function renderHtml(res) {
                                     </div>
                                 </li>`
     }
+
     $("#v-pills-tabContent .tab-pane").eq(nowIndex).find(".am-content").html(htmlStr);
     readerNavigation(res);
 }
@@ -120,3 +127,4 @@ function loadData(fnSuccess) {
     var pageNum = pageMap["categoryId_" + nowTypeId];
     $.get("http://192.168.20.18:1800/api/v1/company/documentation/queryAllByPage?categoryTypeId=" + nowTypeId + "&pageSize=" + pageSize + "&pageNum=" + pageNum, fnSuccess)
 }
+
