@@ -1,8 +1,7 @@
-
 var pageMap = {};
 var nowTypeId = 5;
 var nowIndex = 0;
-var pageSize = 5;
+var pageSize = 1;
 
 init();
 
@@ -22,9 +21,9 @@ function renderHtml(res) {
     var item;
     for (var i = 0; i < data.list.length; ++i) {
         item = data.list[i];
-        if(item.listFiles == ""){
+        if (item.listFiles == "") {
             var imgUrl = item.listFiles = "img/em_business_page/default.png";
-            $("#image").attr("src",imgUrl);
+            $("#image").attr("src", imgUrl);
         }
         htmlStr += `<li class="business_item row ">
                                     <div class="col-md-4 item_left">
@@ -59,9 +58,11 @@ function readerNavigation(res) {
             str += '<li class="page-item pages"><a class="page-link am-link" href="#">' + navData[i] + '</a></li>'
         }
     }
+    var firstPage = $("#firstPage").get(0).outerHTML;
+    var lastPage = $("#lastPage").get(0).outerHTML;
     var firstStr = $("#firstLi").get(0).outerHTML;
     var lastStr = $("#lastLi").get(0).outerHTML;
-    var allStr = firstStr + str + lastStr;
+    var allStr = firstPage + firstStr + str + lastStr + lastPage;
     $('#navUl').html(allStr);
     navAction(res);
 }
@@ -74,23 +75,38 @@ function navAction(res) {
     var pageNum = pageMap['categoryId_' + nowTypeId];
     var privious = $("#previous");
     var next = $("#next");
+    var first = $("#first");
+    var last = $("#last");
     if (!data.hasPreviousPage) {
         privious.addClass('disabled');
+        first.addClass('disabled');
     } else {
         privious.removeClass('disabled');
+        first.removeClass('disabled');
         privious.click(function () {
             pageMap['categoryId_' + nowTypeId] = pageNum - 1;
             loadData(renderHtml);
-        })
+        });
+        first.click(function () {
+            pageMap['categoryId_' + nowTypeId] = pageNum = 1;
+            loadData(renderHtml);
+        });
     }
     if (!data.hasNextPage) {
         next.addClass('disabled');
+        last.addClass('disabled');
     } else {
         next.removeClass('disabled');
+        last.removeClass('disabled');
         next.click(function () {
             pageMap['categoryId_' + nowTypeId] = pageNum + 1;
             loadData(renderHtml)
-        })
+        });
+        last.click(function () {
+            const totalPage = parseInt(data.total);
+            pageMap['categoryId_' + nowTypeId] = totalPage;
+            loadData(renderHtml);
+        });
     }
 
     $('.am-link').click(function () {
