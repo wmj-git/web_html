@@ -1,7 +1,7 @@
 var pageMap = {};
 var nowTypeId = 5;
 var nowIndex = 0;
-var pageSize = 1;
+var pageSize = 5;
 
 init();
 
