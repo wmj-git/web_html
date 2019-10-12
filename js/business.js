@@ -103,7 +103,7 @@ function navAction(res) {
             loadData(renderHtml)
         });
         last.click(function () {
-            const totalPage = parseInt(data.total);
+            const totalPage = parseInt(data.navigateLastPage);
             pageMap['categoryId_' + nowTypeId] = totalPage;
             loadData(renderHtml);
         });
