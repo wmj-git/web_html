@@ -37,13 +37,14 @@ pre {
   }
 
   & .em_details_content {
+    min-height: 500px;
     & .details_title {
-      height: 100px;
+      height: 150px;
       text-align: center;
 
       & h4 {
         text-align: center;
-        padding-top: 60px;
+        padding-top: 100px;
         font-size: 18px;
         color: darken($em-textColor-base, 70%);
         font-weight: 600;
@@ -64,7 +65,7 @@ pre {
     }
 
     & .details_dec {
-      margin: 0 auto;
+      margin: 50px auto;
 
       & p {
         text-indent: 34px;
@@ -80,6 +81,7 @@ pre {
   .em_details {
     & .em_details_content {
       & .details_dec {
+        margin: 10px 0;
         img{
           width: 345px;
           max-width: 100%;

@@ -25,22 +25,26 @@ li {
   overflow: hidden; }
   .em_footer_side .em_footer_left {
     text-align: center;
-    padding-top: 10px; }
+    padding: 60px 0; }
     .em_footer_side .em_footer_left li {
       line-height: 26px; }
     .em_footer_side .em_footer_left span {
       padding-right: 12px;
       line-height: 40px; }
   .em_footer_side .em_footer_right {
-    text-align: center; }
+    text-align: center;
+    padding: 60px 0; }
     .em_footer_side .em_footer_right img {
       padding-top: 22px; }
 
 @media (max-width: 768px) {
   .em_footer_side .em_footer_left {
-    text-align: left; }
-  .em_footer_side .em_footer_right img {
-    padding-top: 0;
-    margin-top: -20px; } }
+    text-align: left;
+    padding: 10px 0; }
+  .em_footer_side .em_footer_right {
+    padding: 10px 0; }
+    .em_footer_side .em_footer_right img {
+      padding-top: 0;
+      margin-top: -20px; } }
 
 /*# sourceMappingURL=common.css.map */

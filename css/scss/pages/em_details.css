@@ -30,35 +30,39 @@ pre {
         border-right: 1px solid #999999;
         padding: 0 10px;
         line-height: 16px; }
-  .em_details .em_details_content .details_title {
-    height: 100px;
-    text-align: center; }
-    .em_details .em_details_content .details_title h4 {
-      text-align: center;
-      padding-top: 60px;
-      font-size: 18px;
-      color: #4d4d4d;
-      font-weight: 600; }
-  .em_details .em_details_content .details_pic {
-    padding: 10px 20px; }
-    .em_details .em_details_content .details_pic .details_img {
-      margin: 20px auto; }
-      .em_details .em_details_content .details_pic .details_img img {
-        width: 100%;
-        height: auto; }
-  .em_details .em_details_content .details_dec {
-    margin: 0 auto; }
-    .em_details .em_details_content .details_dec p {
-      text-indent: 34px;
-      font-size: 16px;
-      line-height: 30px;
-      color: #666666; }
+  .em_details .em_details_content {
+    min-height: 500px; }
+    .em_details .em_details_content .details_title {
+      height: 150px;
+      text-align: center; }
+      .em_details .em_details_content .details_title h4 {
+        text-align: center;
+        padding-top: 100px;
+        font-size: 18px;
+        color: #4d4d4d;
+        font-weight: 600; }
+    .em_details .em_details_content .details_pic {
+      padding: 10px 20px; }
+      .em_details .em_details_content .details_pic .details_img {
+        margin: 20px auto; }
+        .em_details .em_details_content .details_pic .details_img img {
+          width: 100%;
+          height: auto; }
+    .em_details .em_details_content .details_dec {
+      margin: 50px auto; }
+      .em_details .em_details_content .details_dec p {
+        text-indent: 34px;
+        font-size: 16px;
+        line-height: 30px;
+        color: #666666; }
 
 @media (max-width: 768px) {
-  .em_details .em_details_content .details_dec img {
-    width: 345px;
-    max-width: 100%; }
-  .em_details .em_details_content .details_dec p {
-    font-size: 14px; } }
+  .em_details .em_details_content .details_dec {
+    margin: 10px 0; }
+    .em_details .em_details_content .details_dec img {
+      width: 345px;
+      max-width: 100%; }
+    .em_details .em_details_content .details_dec p {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=em_details.css.map */
