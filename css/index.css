@@ -195,6 +195,13 @@ a {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover; }
+.section.fp-section.fp-table.pageVideo {
+  background: url(../img/bgVideo.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  text-align: center;
+  margin: 0 auto; }
 .section.fp-section.fp-table.pageFooter {
   background-color: #d0d2d6; }
 
