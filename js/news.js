@@ -14,6 +14,7 @@ function init() {
 // 渲染页面
 function renderHtml(res) {
     var data = res.data;
+    console.log(25, data)
     var htmlStr = '';
     var item;
     for (var i = 0; i < data.list.length; ++i) {
@@ -136,6 +137,7 @@ function click() {
 
 // 加载分页数据
 function loadData(fnSuccess) {
+    console.log(window.baseUrl)
     var pageNum = pageMap["categoryId_" + nowTypeId];
-    $.get("http://192.168.20.18:1800/api/v1/company/news/queryAllByPage?categoryTypeId=" + nowTypeId + "&pageSize=" + pageSize + "&pageNum=" + pageNum, fnSuccess)
+    $.get(window.baseUrl+"/news/queryAllByPage?categoryTypeId=" + nowTypeId + "&pageSize=" + pageSize + "&pageNum=" + pageNum, fnSuccess)
 }

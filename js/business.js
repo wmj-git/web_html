@@ -141,6 +141,6 @@ function click() {
 // 加载分页数据
 function loadData(fnSuccess) {
     var pageNum = pageMap["categoryId_" + nowTypeId];
-    $.get("http://192.168.20.18:1800/api/v1/company/documentation/queryAllByPage?categoryTypeId=" + nowTypeId + "&pageSize=" + pageSize + "&pageNum=" + pageNum, fnSuccess)
+    $.get(window.baseUrl+"/documentation/queryAllByPage?categoryTypeId=" + nowTypeId + "&pageSize=" + pageSize + "&pageNum=" + pageNum, fnSuccess)
 }
 

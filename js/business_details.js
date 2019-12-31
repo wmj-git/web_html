@@ -1,6 +1,6 @@
 var id = Number(window.location.search.substring(4));
 console.log(id);
-$.get("http://192.168.20.18:1800/api/v1/company/documentation/getOne/" + id, function (res) {
+$.get(window.baseUrl+"/documentation/getOne/" + id, function (res) {
 
     if (res.statusCode == 200) {
         var data = res.data;
